@@ -39,12 +39,7 @@ body {
     padding-bottom:0 ;  
   
 }
-.boton{
-    
-    
-    
 
-}
 
 .formI__boton{
     width: 40%;
@@ -58,7 +53,7 @@ body {
 
 .formI__user,.formI__email,.formI__contra{
     display: flex;
-    height: 100px;
+    
     align-items: baseline;
 
 }
@@ -69,8 +64,11 @@ body {
 }
 .icono{
     flex: .3;
+    display: flex;
+    align-items: center;
   padding: .1rem;
     margin-right: .3rem;
+    height: 40px;
     background-color: rgba(128, 128, 128,.2);
 }
 
@@ -80,4 +78,5 @@ body {
     flex: 4;
     border: none;
     padding: .1rem;
+    height: 40px;
 }
