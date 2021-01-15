@@ -1,0 +1,83 @@
+body {
+    background-image: url(../../images/fondos/fondo_principal.jpg);
+}
+.formI{
+    background-color:rgba(255, 255, 255, .1);
+    margin:1rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+
+.formI__section{
+    display: flex;
+    padding-bottom:1.5rem ;
+    padding: .5rem;
+  
+}
+.registrate,.identificate{
+    flex: 1;text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+.identificate{
+    background-color:rgba(255, 255, 255,.2);
+}
+
+.formI__registrate,.formI__identificate{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+.datos{
+    flex-direction: column;
+    padding-bottom:0 ;  
+  
+}
+.boton{
+    
+    
+    
+
+}
+
+.formI__boton{
+    width: 40%;
+    margin: 0 auto;
+    color: black;
+    font-weight: bold;
+    padding: .5rem;
+}
+
+
+
+.formI__user,.formI__email,.formI__contra{
+    display: flex;
+    height: 30px;
+    align-items: baseline;
+
+}
+
+
+.formI__email{
+    margin: .8rem 0;
+}
+.icono{
+    flex: .3;
+  padding: .1rem;
+    margin-right: .3rem;
+    background-color: rgba(128, 128, 128,.2);
+}
+
+
+.formI_item{
+    background-color: rgba(128, 128, 128,.2);
+    flex: 4;
+    border: none;
+    padding: .1rem;
+}
