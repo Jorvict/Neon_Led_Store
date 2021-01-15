@@ -1,0 +1,85 @@
+/*----------FOOTER---------*/
+
+@font-face{
+    font-family: garamond;
+    src: url("../../fuentes/garamond.ttf");
+}
+
+@font-face{
+    font-family: comfortaa;
+    src: url("../../fuentes/Comfortaa-Light.ttf");
+}
+
+.footer {
+    width: 100%;
+    background: #292929;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+.footer .footer__empresa {
+    width: 100%;
+    min-height: auto;
+    padding: 20px 20px 5px 20px;
+    display: flex;
+    position: relative;
+}
+
+.footer .footer__empresa .nosotros,
+.footer .footer__empresa .contacto {
+    width: 50%;
+    padding: 0px 20px;
+}
+
+.footer__empresa .nosotros .sociales a {
+    color: #fff;
+}
+
+.footer__empresa .nosotros .sociales a i {
+    height: 30px;
+    font-size: 30px;
+    margin: 20px 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.footer__empresa .nosotros .sociales a:hover:nth-child(1) i {
+    color: #457fcc;
+}
+
+.footer__empresa .nosotros .sociales a:hover:nth-child(2) i {
+    color: #bc2a8d;
+}
+
+.footer__empresa .nosotros .sociales a:hover:nth-child(3) i {
+    color: #c4302b;
+}
+
+.footer .footer__empresa h3 {
+    font-size: 20px;
+    font-family: comfortaa;
+}
+
+.footer .footer__empresa p {
+    color: var(--bg-dark);
+    font-weight: 300;
+    margin: 5px 0;
+    font-family: comfortaa;
+    font-size: 15px;
+}
+
+.footer .footer__empresa p i {
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+@media (max-width: 700px) {
+    .footer .footer__empresa {
+        flex-direction: column;
+    }
+    .footer .footer__empresa .nosotros,
+    .footer .footer__empresa .contacto {
+        width: 100%;
+    }
+}

@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Comfortaa-Bold;
+    src: url(../fuentes/Comfortaa-Bold.ttf);
+}
+
+@font-face {
+    font-family: Comfortaa-Light;
+    src: url(../fuentes/Comfortaa-Light.ttf);
+}
+
+@font-face {
+    font-family: Comfortaa-Regular;
+    src: url(../fuentes/Comfortaa-Regular.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    min-height: calc(100vh - 230px);
+    background-color: #000;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .container {
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5em 1.5em;
+}
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    font-family: Comfortaa-Regular;
+    text-shadow: 0 0 20px #ffc107;
+}
+
+.main .container .card {
+    width: 300px;
+    margin: 20px 10px;
+    transition: .3s;
+    border-radius: 25px;
+    text-align: center;
+    height: fit-content;
+}
+
+.main .container .card:hover {
+    box-shadow: 0px 0px 20px rgba(19, 108, 165, 0.3);
+    transition: .3s;
+}
+
+
+.main .container .card__text {
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.main .container .card .boton a button {
+    width: 150px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: none;
+    border-radius: 5px;
+    color: rgb(19, 108, 165);
+    background: none;
+    border: 1px solid rgb(19, 108, 165);
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    box-shadow: 0px 0px 20px rgba(19, 108, 165, 0.3);
+    transition: 0.3s;
+}
+
+.main .container .card .boton a button:hover {
+    background: rgb(19, 108, 165);
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+/*--------------------------------*/
+
+@media (max-width: 650px) {
+    .video video {
+        width: 350px !important;
+        height: 300px !important;
+        transition: .3s;
+    }
+}

@@ -1,0 +1,328 @@
+:root{
+    --primary-color: #141414;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    /*background-color: #181818;*/
+    background-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    min-height: calc(100vh - 230px);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.main .principal-container{
+    width: 100%;
+    max-width: 1000px;
+    /* height: auto; */
+    display: flex;
+    /* justify-content: center; */
+}
+
+/* Sección de productos dentro del carrito (Apartado izquierdo) */
+.main .principal-container .basket{
+    width: 68.75%;
+}
+
+.main .principal-container .basket .header-container{
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 30px 60px;
+}
+
+.main .principal-container .basket .header-container .title{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.main .principal-container .basket .basket-item{
+    background-color: var(--primary-color);
+    margin: 30px 0;
+}
+
+.main .principal-container .basket .basket-item .item-form{
+    padding: 30px 60px 30px 60px;
+    display: flex;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-left{
+    max-width: 50%;
+    width: 50%;
+    padding-right: 30px;
+    display: flex;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-left .img-container{
+    margin: 0 30px 0 0;
+    min-width: 90px;
+    width: 90px;
+    display: inline-block;
+    text-align: center;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-left .img-container .img-producto{
+    max-width: 100%;
+    height: 90px;
+    border: 1px solid black;
+}
+
+
+.main .principal-container .basket .basket-item .item-form .section-left .product-description{
+    width: 100%;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-left .product-description .product-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.07rem;
+    color: rgb(199, 199, 199);
+    line-height: 1rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-left .product-description .product-name{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: white;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-left .product-description .product-id{
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: rgb(199, 199, 199);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-left .product-description .delete-button-container .btn-delete{
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: initial;
+    outline: none;
+    border: none;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-right{
+    max-width: 50%;
+    width: 50%;
+    display: flex;
+    position: relative;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-right .product-price{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-top: 1rem;
+    margin-right: 3rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+.main .principal-container .basket .basket-item .item-form .section-right .product-quantity{
+    position: absolute;
+    right: 0;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-right .product-quantity .container-quantity{
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    height: 50px;
+    width: 120px;
+    margin: auto;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-right .product-quantity .container-quantity .quantity-value{
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    height: 100%;
+    max-width: 100%;
+    text-align: center;
+    width: 4rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.decrease, .increase {
+    background: none;
+    color: white;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-weight: 600;
+    height: 100%;
+    outline: none;
+    text-align: center;
+    -webkit-transition: color 0.3s ease 50ms;
+    transition: color 0.3s ease 50ms;
+    width: 37px;
+    border: none;
+    cursor: pointer;
+}
+
+.decrease{
+    border-right: solid 1px white;
+}
+
+.increase{
+    border-left: solid 1px white;
+}
+
+
+
+
+/* Sección resumen de compra (Apartado derecho) */
+.main .principal-container .order-summary{
+    width: 28.125%;
+    max-height: 200px;
+    position: sticky;
+    top: 80px;
+    margin-left: 3.125%;
+    background-color: var(--primary-color);
+}
+
+.main .principal-container .order-summary .order-status-container{
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 5rem;
+    /* background-color: red; */
+    padding: 10px 12px 20px 12px;
+}
+
+.main .principal-container .order-summary .order-status-container .order-status .title-container .title{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.main .principal-container .order-summary .order-status-container .order-status .title-container .total-container{
+    display: flex;
+    position: relative;
+}
+
+.main .principal-container .order-summary .order-status-container .order-status .title-container .total-container span{
+    position: absolute;
+    right: 0;
+}
+
+.main .principal-container .order-summary .order-status-container .order-status .title-container .button-container .btn-buy {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.2rem 0;
+    background-color: #202020;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 2px solid #5a5a5a;
+    cursor: pointer;
+}
+
+.btn-buy a{
+    color: #FFF;
+}
+
+/*--------------------------------*/
+@media screen and (max-width: 700px) {
+    .main .principal-container .order-summary .order-status-container{
+        background-color: var(--primary-color);
+    }
+
+    .main .principal-container .order-summary .order-status-container .order-status .title-container .total-container{
+        display: block;
+    }
+
+    .main .principal-container .basket .basket-item .item-form .section-right{
+        display: initial;
+    }
+
+    .main .principal-container .basket .basket-item .item-form .section-right .product-price{
+        margin-right: 0;
+        margin-bottom: 5rem;
+        text-align: end;
+    }
+
+    .main .principal-container .order-summary .order-status-container .order-status .title-container .total-container span{
+        position: initial;
+    }
+
+}
+/*--------------------------------*/
+@media screen and (max-width: 425px) {
+    .main .principal-container {
+        width: 100%;
+        display: block;
+    }
+
+    .main .principal-container .basket{
+        width: 100%;
+    }
+
+    .main .principal-container .basket .header-container .title{
+        font-size: 2.1rem;
+    }
+
+    .main .principal-container .basket .basket-item .item-form .section-left{
+        display: initial;
+    }
+
+    .main .principal-container .basket .basket-item .item-form .section-right{
+        display: initial;
+    }
+
+    .main .principal-container .basket .basket-item .item-form .section-right .product-price{
+        margin-right: 0;
+        margin-bottom: 5rem;
+        text-align: end;
+    }
+
+    /* Summary-order */
+    .main .principal-container .order-summary{
+        width: 90%;
+        margin: 5%;
+        margin-bottom: 100px;
+        position: initial;
+        top: initial;
+    }
+
+    .main .principal-container .order-summary .order-status-container{
+        border: 2px solid white;
+    }
+
+}
