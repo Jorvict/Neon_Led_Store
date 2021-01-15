@@ -81,9 +81,7 @@ p,body {
     margin: 0;
 }
 
-.instagran {
-    margin-left: .3rem;
-}
+
 
 @media screen and (min-width:830px){
     .instagran  {

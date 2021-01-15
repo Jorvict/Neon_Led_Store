@@ -42,7 +42,7 @@ body {
 
 
 .formI__boton{
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
     color: black;
     font-weight: bold;
@@ -78,7 +78,7 @@ body {
     flex: 4;
     border: none;
     padding: .1rem;
-    height: 40px;
+    height: 60px;
 }
 .boton{
     margin-top: 1rem;
