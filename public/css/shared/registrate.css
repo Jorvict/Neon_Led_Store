@@ -10,7 +10,10 @@ background-color:  rgba(255, 255, 255,.2);
 .boton{
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
 }
+
+
 .form1__olvidastesContra{
     align-self: flex-end;
     padding: 0rem;
@@ -20,4 +23,18 @@ background-color:  rgba(255, 255, 255,.2);
     text-decoration: none;
     color: white;
     font-size: 13px;
+}
+
+
+@media screen and (min-width:830px){
+    .olvidastes{
+        font-size: 16px;
+    }
+    .boton{  padding: 0 3rem;}
+
+
+    .registrate,.identificate{
+        padding: 3rem;
+        font-size: 2rem;
+    }
 }

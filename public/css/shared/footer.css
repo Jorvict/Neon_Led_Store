@@ -15,9 +15,10 @@ p,body {
 }
 @media screen and (min-width:830px){
     .footer{
-    font-size: 18px;
+    font-size: 1rem;
     padding: 4rem;
-    padding-left: 6rem;
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
     }
 }
 
@@ -51,7 +52,7 @@ p,body {
 
 @media screen and (min-width:830px){
     .footer__section {
-        flex: 1.4;
+        flex: .2;
         padding: 1rem;
         padding-top: 0;
     }
@@ -93,16 +94,16 @@ p,body {
 
 .footerC_item {
     display: flex;
-    flex-direction: column;
+   
     margin-bottom: .5rem;
     align-items: center;
-    text-align: center;
+   
 }
 
 
 @media screen and (min-width:830px){
     .footerC_item {
-       flex-direction: row;
+     
        align-items: flex-start;
         margin-bottom: .5rem;
         flex: 1;
@@ -113,7 +114,9 @@ p,body {
 
 .icono1 {
     text-align: center;
-    width: 10%;
+    margin-right: 0.3rem;
+  font-size: 18px;
+  width: 13.5px;
 
 }
 
@@ -133,6 +136,7 @@ p,body {
 
 .footer__resumen {
     flex: 2;
+    padding-right: 0;
 }
 
 .social__item {
@@ -140,11 +144,17 @@ p,body {
     text-decoration: none;
 }
 
-
+.texto{
+    margin-left: .5rem;
+}
 
 @media screen and (min-width:830px){
     .texto {
         text-align: initial;
+        
+    }
+    .footer__ubicacion{
+        flex: 1;
     }
 }
  

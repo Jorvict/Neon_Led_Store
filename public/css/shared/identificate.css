@@ -2,18 +2,22 @@ body {
     background-image: url(../../images/fondos/fondo_principal.jpg);
 }
 .formI{
-    background-color:rgba(255, 255, 255, .1);
+    background-color:rgba(58, 57, 57, 0.8);
     margin:2rem;
     display: flex;
     flex-direction: column;
     color: white;
 }
-
+@media screen and (min-width:830px){
+    .formI{
+    width: 45%;
+    margin: 8rem auto;
+}}
 
 .formI__section{
     display: flex;
     padding-bottom:1.5rem ;
-    padding: .5rem;
+    
   
 }
 .registrate,.identificate{
@@ -36,20 +40,28 @@ body {
 
 .datos{
     flex-direction: column;
-    padding-bottom:0 ;  
+   
+    padding: 0 1rem;
   
 }
 
+@media screen and (min-width:830px){
+    .datos{padding: 0 3rem;}}
+
 
 .formI__boton{
-    width: 60%;
+    width:55%;
     margin: 0 auto;
     color: black;
     font-weight: bold;
     padding: .5rem;
 }
 
-
+@media screen and (min-width:830px){
+    .formI__boton{
+        padding: 1.5rem;
+        font-size: 20px;
+    }}
 
 .formI__user,.formI__email,.formI__contra{
     display: flex;
@@ -63,12 +75,14 @@ body {
     margin: .8rem 0;
 }
 .icono{
+    justify-content: center;
+    height: 45px;
     flex: .3;
     display: flex;
     align-items: center;
   padding: .1rem;
     margin-right: .3rem;
-    height: 40px;
+    
     background-color: rgba(128, 128, 128,.2);
 }
 
@@ -78,9 +92,16 @@ body {
     flex: 4;
     border: none;
     padding: .1rem;
-    height: 60px;
+    height: 45px;
 }
 .boton{
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
+   
 }
+
+@media screen and (min-width:830px){
+    .identificate,.registrate{
+        padding: 3rem;
+        font-size:2rem;
+    }
