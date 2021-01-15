@@ -1,0 +1,22 @@
+/*  */
+.formI__user{
+    margin: 1rem 0;
+}
+.identificate{background-color: transparent;}
+.registrate{
+background-color:  rgba(255, 255, 255,.2);
+
+}
+.boton{
+    flex-direction: column;
+    align-items: center;
+}
+.form1__olvidastesContra{
+    align-self: flex-end;
+    padding: 0rem;
+    margin-bottom: 1rem;
+}
+.olvidastes{
+    text-decoration: none;
+    color: white;
+}

@@ -3,7 +3,7 @@ body {
 }
 .formI{
     background-color:rgba(255, 255, 255, .1);
-    margin:1rem;
+    margin:2rem;
     display: flex;
     flex-direction: column;
     color: white;
@@ -79,4 +79,8 @@ body {
     border: none;
     padding: .1rem;
     height: 40px;
+}
+.boton{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }

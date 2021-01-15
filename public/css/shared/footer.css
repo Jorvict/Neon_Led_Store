@@ -9,7 +9,7 @@ p,body {
 .footer {
     background-color: white;
     font-size: 14px;
-    padding: 1.5rem;
+    padding: 1.5rem .3rem;
     
     
 }
@@ -122,12 +122,14 @@ p,body {
 .footer__titulo {
 
     margin: 0 auto;
+    font-size: 17px;
    
 }
 
 @media screen and (min-width:830px){
     .footer__titulo {
         padding: 0 1rem;
+        font-size: 32px;
     }
 }
 
