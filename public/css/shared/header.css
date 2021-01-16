@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-image: url('../../images/fondos/fondo_principal.jpg');
+    display: flex;
+    justify-content: center;
+}
+
+.page-container{
+    width: 100vw;
+    max-width: 1366px;
+    height: 100vh; /*RECORDAR comentar/eliminar */
+}
+
+.cabecera-container{
+    width: 100%;
+    height: 160px;
+    background-color: transparent;
+    padding: 0px 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecera-container .cabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecera-container .cabecera .logo-container{
+    width: 120px;
+    height: 120px;
+}
+
+.cabecera-container .cabecera .logo-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.cabecera-container .cabecera .list-container{
+    width: 70%;
+}
+
+.cabecera-container .cabecera .list-container .menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecera-container .cabecera .list-container .menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.cabecera-container .cabecera .list-container .menu ul li a{
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+}
+
+.cabecera-container .cabecera .list-container .menu ul.list-left li{
+    margin-right: 70px;
+}
+
+.cabecera-container .cabecera .list-container .menu ul.list-left li.hidden-desk{
+    display: none;
+}
+
+.cabecera-container .cabecera .list-container .menu ul.list-right{
+    padding-right: 20px;
+}
+
+.cabecera-container .cabecera .list-container .menu ul.list-right li i{
+    margin-left: 10px;
+}
+
+.cabecera-container .cabecera .elements-mobile{
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    display: none;
+}
+
+.cabecera-container .cabecera .elements-mobile a{
+    color: red;
+}
+
+@media screen and (max-width:768px){
+    .cabecera-container{
+        padding: 0 0px;
+    }
+
+    .cabecera-container .cabecera .logo-container{
+        margin-left: 40px;
+    }
+
+    .cabecera-container .cabecera .elements-mobile{
+        display: flex;
+        margin-right: 40px;
+    }
+
+    .cabecera-container .cabecera .elements-mobile .burger-button{
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 5000;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecera-container .cabecera .elements-mobile .burger-button i{
+        color: white;
+        font-size: 24px;
+    }
+
+    .cabecera-container .cabecera .list-container{
+        position: fixed;
+        background: black;
+        z-index: 1000;
+        top: 0;
+        transform: translateX(-120%);
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+    }
+
+    .cabecera-container .cabecera .list-container.is-active{
+        transform: translateX(0%);
+    }
+
+    .cabecera-container .cabecera .list-container .menu{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 50px;
+    }
+
+    .cabecera-container .cabecera .list-container .menu ul{
+        display: block;
+    }
+
+    .cabecera-container .cabecera .list-container .menu ul.list-left li{
+        margin: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .cabecera-container .cabecera .list-container .menu ul.list-left li a i{
+        margin-left: 10px;
+    }
+
+    .cabecera-container .cabecera .list-container .menu ul.list-left li.hidden-desk{
+        display: initial;
+    }
+    
+    .cabecera-container .cabecera .list-container .menu ul.list-right li.hidden-mobile{
+        display: none;
+    }
+
+    .cabecera-container .cabecera .burger-button{
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width:425px){
+    .cabecera-container .cabecera .list-container .menu{
+        width: 100%;
+    }
+
+    .cabecera-container .cabecera .logo-container{
+        margin-left: 20px;
+    }
+
+    .cabecera-container .cabecera .elements-mobile{
+        width: 180px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .cabecera-container .cabecera .logo-container{
+        margin-left: 5px;
+    }
+
+    .cabecera-container .cabecera .elements-mobile{
+        width: 150px;
+        margin-right: 5px;
+    }
+}
