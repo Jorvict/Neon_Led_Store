@@ -1,0 +1,839 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+body {
+    background-image: url("../../images/fondos/fondo_principal.jpg");
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    grid-template: 160px 100px 1fr / 1fr 1fr;
+    grid-template-areas:"header header"
+                        "title title"
+                        "formulario orden"
+                        "footer footer";
+}
+
+/* ---------------------------------- */
+
+/* .header {
+    grid-area: header;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+} */
+
+.cabecera-container{
+    grid-area: header;
+    width: 100%;
+    height: 160px;
+    background-color: transparent;
+    padding: 0px 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .cabecera-container {
+
+    }
+}
+
+/* ---------------------------------- */
+
+.title {
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title h3 {
+    font-size: 3rem;
+    color: white;
+}
+
+.button_title {
+    background-color:white;
+	border-radius:5px;
+	border:1px solid black;
+	cursor:pointer;
+	font-size:2rem;
+	font-weight:bold;
+	padding:1rem 3rem;
+    height: 5rem;
+}
+
+.button_title a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ---------------------------------- */
+
+.formulario {
+    grid-area: formulario;
+    color: white;
+    width: 80%;
+    margin-left: 20%;
+    margin-bottom: 2rem;
+}
+
+.form-datos {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-datos h2 {
+    font-size: 2rem;
+}
+
+.form-datos label {
+    font-size: 1.6rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.form-datos input {
+    height: 3rem;
+    background-color: #333333;
+    border: none;
+}
+
+
+/* ---------------------------------- */
+
+.orden {
+    grid-area: orden;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    width: 80%;
+    margin-right: 20%;
+    margin-bottom: 2rem;
+}
+
+.orden_box {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    width: 80%;
+    height: 70%;
+    background-color: rgb(51, 51, 51, 0.8);
+    padding: 2rem;
+    margin-top: 6rem;
+}
+
+.orden_box .header-order {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+.header-order p {
+    font-weight: bold;
+}
+.header-order a {
+    text-decoration: none;
+    color: white;
+}
+
+.orden_box .subtotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+}
+.subtotal span {
+    font-weight: bold;
+}
+
+.orden_box .envio {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+}
+.envio span {
+    font-weight: bold;
+}
+
+.orden_box .total {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    font-weight: bold;
+}
+
+.button_orden {
+    background-color:white;
+	border-radius:5px;
+	border:1px solid black;
+	cursor:pointer;
+	font-size:1.6rem;
+	font-weight:bold;
+	padding:1rem 2rem;
+    text-decoration:none;
+    height: 5rem;
+    width: 50%;
+    align-self: center;
+}
+
+.button_orden a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ---------------------------------- */
+
+.footer {
+    grid-area: footer;
+    background-color: white;
+    font-size: 1.4rem;
+}
+
+.social {
+    font-size: 3.2rem;
+}
+
+
+@media screen and (min-width:830px){
+    .footer{
+    font-size: 1.6rem;
+    padding: 4rem;
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+    }
+
+    .social{
+        font-size: 4.8rem;
+    }
+}
+
+
+/*************************'''MODAL'''**************************/
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content */
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+  /* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.modal-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.6rem;
+    background-color: white;
+    color: white;
+}
+.modal-header h3 {
+    margin: auto;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
+ 
+.modal-body {
+    padding: 1rem 1.6rem;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    grid-template-areas: "card yape";
+    align-items: baseline;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+/* .modal-body {
+    padding: 1rem 1.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+} */
+
+.modal-body-card {
+    grid-area: card;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-body-yape {
+    grid-area: yape;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    padding: 2px 16px;
+    background-color: white;
+    color: white;
+}
+
+.modal-button-compra {
+    background-color:black;
+	border-radius:5px;
+	border:1px solid black;
+	cursor:pointer;
+	font-size:2rem;
+	font-weight:bold;
+	padding:0.5rem 1rem;
+    text-decoration:none;
+    height: 5rem;
+    align-self: center;
+}
+
+.modal-button-compra a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+/*************************'''CARD'''**************************/
+
+
+/* The Modal (background) */
+.modal_card {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content */
+
+.modal-content_card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+  /* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+    
+.modal-header_card {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.6rem;
+    background-color: white;
+    color: white;
+}
+.modal-header_card h3 {
+    margin: auto;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
+ 
+.modal-body_card {
+    padding: 1rem 1.6rem;
+    display: grid;
+    grid-template: 1fr / 3fr 2fr;
+    grid-template-areas: "card yape";
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+/* .modal-body {
+    padding: 1rem 1.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+} */
+
+.modal-body-card_card {
+    grid-area: card;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.modal-body-card_card input {
+    height: 3rem;
+    background-color: #333333;
+    color: white;
+    border: none;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.modal-body-yape_card {
+    grid-area: yape;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-footer_card {
+    display: flex;
+    justify-content: center;
+    padding: 2px 16px;
+    background-color: white;
+    color: white;
+}
+
+.modal-button-compra_card {
+    background-color:black;
+	border-radius:5px;
+	border:1px solid black;
+	cursor:pointer;
+	font-size:2rem;
+	font-weight:bold;
+	padding:0.5rem 1rem;
+    text-decoration:none;
+    height: 5rem;
+    align-self: center;
+}
+
+.modal-button-compra_card a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/*************************'''YAPE'''**************************/
+
+
+/* The Modal (background) */
+.modal_yape {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content */
+
+.modal-content_yape {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+  /* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.modal-header_yape {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.6rem;
+    background-color: white;
+    color: white;
+}
+.modal-header_yape h3 {
+    margin: auto;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
+ 
+.modal-body_yape {
+    padding: 1rem 1.6rem;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    grid-template-areas: "card yape";
+    align-items: baseline;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+/* .modal-body {
+    padding: 1rem 1.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+} */
+
+.modal-body-card_yape {
+    grid-area: card;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+}
+
+.modal-body-card_yape input {
+    height: 3rem;
+    background-color: #333333;
+    color: white;
+    border: none;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+
+.modal-body-yape_yape {
+    grid-area: yape;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+}
+
+.modal-footer_yape {
+    display: flex;
+    justify-content: center;
+    padding: 2px 16px;
+    background-color: white;
+    color: white;
+}
+
+.modal-button-compra_yape {
+    background-color:black;
+	border-radius:5px;
+	border:1px solid black;
+	cursor:pointer;
+	font-size:2rem;
+	font-weight:bold;
+	padding:0.5rem 1rem;
+    text-decoration:none;
+    height: 5rem;
+    align-self: center;
+}
+
+.modal-button-compra_yape a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+
+
+
+    body {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        grid-template: 100px 150px 1fr 1fr / 1fr;
+        grid-template-areas:"header"
+                            "title"
+                            "formulario" 
+                            "orden"
+                            "footer";
+    }
+
+    .cabecera-container {
+        padding: 0 0px;
+    }
+
+    .title {
+        width: 80%;
+        margin: auto;
+    }
+
+    .button_title{
+        font-size: 1.5rem;
+    }
+
+    .formulario {
+        width: 90%;
+        margin: auto;
+    }
+
+    .form-datos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .orden {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .button_orden {
+        margin-bottom: 2rem;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    .modal-content_card {
+        width: 80%;
+    }
+
+    .modal-content_yape {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    
+    body {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        grid-template: 100px 150px 1fr 1fr / 1fr;
+        grid-template-areas:"header"
+        "title"
+        "formulario" 
+        "orden"
+        "footer";
+    }
+
+    .title {
+        width: 90%;
+        margin: auto;
+    }
+
+    .title h3{
+        font-size: 1.5rem;
+    }
+
+    .button_title {
+        font-size: 1.5rem;
+        padding: 1rem 1rem;
+    }
+
+    .orden_box{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .button_orden {
+        margin-bottom: 2rem;
+        padding: 1rem 1rem;
+        font-size: 1.1rem;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .modal-header {
+        padding: 1rem 0.1rem;
+    }
+
+    .modal-header h3 {
+        font-size: 1.6rem;
+    }
+
+    .modal-button-compra {
+        font-size: 1.6rem;
+    }
+
+    .modal-body {
+        padding: 1rem 0.1rem;
+        font-size: 1rem;
+    }
+
+    .modal-content_card {
+        width: 100%;
+    }
+    .modal-header_card {
+        padding: 1rem 0.1rem;
+    }
+    .modal-header_card h3 {
+        font-size: 1.6rem;
+    }
+    .modal-body_card {
+        grid-template: 1fr 10rem / 1fr;
+        grid-template-areas: "card"
+                            "yape";
+        padding: 1rem 0.1rem;
+        font-size: 1rem;
+    }
+    .modal-body-card_card {
+        align-items: center;
+        font-size: 1.6rem;
+    }
+    .modal-button-compra_card {
+        font-size: 1.6rem;
+    }
+
+    .modal-content_yape {
+        width: 100%;
+    }
+    .modal-header_yape {
+        padding: 1rem 0.1rem;
+    }
+    .modal-header_yape h3 {
+        font-size: 1.6rem;
+    }
+    .modal-body_yape {
+        grid-template: 1fr 10rem / 1fr;
+        grid-template-areas: "card"
+                            "yape";
+        padding: 1rem 0.1rem;
+        font-size: 1rem;
+    }
+    .modal-body-card_yape {
+        align-items: center;
+        font-size: 1.6rem;
+    }
+    .modal-button-compra_yape {
+        font-size: 1.6rem;
+    }
+
+    .modal-body-yape_yape {
+        align-self: center;
+    }
+
+    .modal-body-yape_card {
+        align-self: center;
+    }
+
+}
