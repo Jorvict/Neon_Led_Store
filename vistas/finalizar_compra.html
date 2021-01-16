@@ -1,64 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finalizar compra</title>
+    <title>Neon Led Store</title>
     <script src="https://kit.fontawesome.com/c702fce202.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../public/css/shared/footer.css">
     <link rel="stylesheet" href="../public/css/shared/header.css">
+    <link rel="stylesheet" href="../public/css/shared/finalizar_compra.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <div class="page-container">
-        <div class="cabecera-container">
-            <header class="cabecera">
-                <figure class="logo-container">
-                    <img src="../public/images/logo.webp" alt="">
-                </figure>
-    
-                <div class="list-container">
-                    <nav class="menu">
-                        <ul class="list-left">
-                            <li>
-                                <a href="">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="">Tienda</a>
-                            </li>
-                            <li>
-                                <a href="">Contacto</a>
-                            </li>
-                            <li class="hidden-desk">
-                                <a href="">Iniciar Sesión<i class="far fa-user"></i></a>
-                            </li>
-                        </ul>
-                        <ul class="list-right">
-                            <li class="hidden-mobile">
-                                <a href="">Iniciar Sesión<i class="far fa-user"></i></a>
-                            </li>
-                        </ul>
-                    </nav>
+    <div class="cabecera-container">
+        <header class="cabecera">
+            <figure class="logo-container">
+                <img src="../public/images/logo.webp" alt="">
+            </figure>
+
+            <div class="list-container">
+                <nav class="menu">
+                    <ul class="list-left">
+                        <li>
+                            <a href="">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="">Tienda</a>
+                        </li>
+                        <li>
+                            <a href="">Contacto</a>
+                        </li>
+                        <li class="hidden-desk">
+                            <a href="">Iniciar Sesión<i class="far fa-user"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="list-right">
+                        <li class="hidden-mobile">
+                            <a href="">Iniciar Sesión<i class="far fa-user"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="elements-mobile">
+                <p>Juan</p>
+                <a href="">Salir</a>
+                <i class="fas fa-shopping-cart"></i>
+                <div class="burger-button">
+                    <i class="fas fa-bars"></i>
                 </div>
-                
-                <div class="elements-mobile">
-                    <p>Juan</p>
-                    <a href="">Salir</a>
-                    <i class="fas fa-shopping-cart"></i>
-                    <div class="burger-button">
-                        <i class="fas fa-bars"></i>
+            </div>
+
+        </header>
+    </div>
+
+    <div class="title">
+        <h3>Finalizar Compra</h3>
+        <button class="button_title" type="button"><a href="">Seguir Comprando</a></button>
+    </div>
+
+    <div class="formulario">
+        <form class="form-datos">
+            <h2>Datos</h2>
+            <label><span>Nombres</span></label>
+            <input type="text" id="nombre" name="nombre">
+            <label><span>Apellidos</span></label>
+            <input type="text" id="apellidos" name="apellidos">
+            <label><span>Email</span></label>
+            <input type="email" id="email" name="email">
+            <label><span>Direcci&oacuten</span></label>
+            <input type="text" id="direccion" name="direccion">
+            <label><span>Tel&eacutefono</span></label>
+            <input type="text" id="telefono" name="telefono">
+        </form>
+    </div>
+
+    <div class="orden">
+        <div class="orden_box">
+            <div class="header-order">
+                <p>Resumen de tu orden</p>
+                <a href="">Editar Carrito</a>
+            </div>
+            <div class="subtotal">
+                <p>Sub-Total Productos</p>
+                <span id="subtotal">S/. 136.50 </span>
+            </div>
+            <div class="envio">
+                <p>Env&iacuteo</p>
+                <span id="coste_envio">S/. 136.50 </span>
+            </div>
+            <div class="total">
+                <p>Total</p>
+                <span id="total">S/. 136.50 </span>
+            </div>
+            <button class="button_orden" id="button_orden" type="button">Finalizar Compra<a href=""></a></button>
+        </div>
+    </div>
+
+
+    <!-- Modal Metodo de Pago -->
+    <div id="modal-metodo" class="modal">
+    <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Selecciona el método del pago</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-card">
+                    <img id="card" src="../public/images/payment_card.JPG" alt="">
+                    <p>Transferencia bancaria</p>    
+                </div>
+                <div class="modal-body-yape">
+                    <img id="yape" src="../public/images/payment_yape.JPG" alt="">
+                    <p>Yape</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-button-compra" type="button"><a href="">Enviar Comprobante</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Card -->
+    <div id="modal-card" class="modal_card">
+    <!-- Modal content -->
+        <div class="modal-content_card">
+            <div class="modal-header_card">
+                <h3>Selecciona el método del pago</h3>
+                <img id="back_card" src="../public/images/back_arrow.JPG" alt="atras">
+            </div>
+            <div class="modal-body_card">
+                <form class="modal-body-card_card">
+                    <p>N° de Cuenta de la Empresa:</p>
+                    <p id="count_number">192123123921233231</p>
+                </form>
+                <div class="modal-body-yape_card">
+                    <img src="../public/images/payment_card.JPG" alt="Pago con Tarjeta">
+                </div>
+            </div>
+            <div class="modal-footer_card">
+                <button class="modal-button-compra_card" type="button"><a href="">Enviar Comprobante</a></button>
+            </div>
+        </div>
+    </div>    
+
+    <!-- Modal Yape -->
+    <div id="modal-yape" class="modal_yape">
+        <!-- Modal content -->
+            <div class="modal-content_yape">
+                <div class="modal-header_yape">
+                    <h3>Selecciona el método del pago</h3>
+                    <img id="back_yape" src="../public/images/back_arrow.JPG" alt="atras">
+                </div>
+                <div class="modal-body_yape">
+                    <form class="modal-body-card_yape">
+                        <img id="QR" src="../public/images/QR_method.JPG" alt="QR">
+                        <p>N° Celular</p>
+                        <p id="cellphone">999888777</p>
+                    </form>
+                    <div class="modal-body-yape_yape">
+                        <img src="../public/images/payment_yape.JPG" alt="Pago con Yape">
                     </div>
                 </div>
-    
-            </header>
-        </div>
-    
+                <div class="modal-footer_yape">
+                    <button class="modal-button-compra_yape" type="button"><a href="">Enviar Comprobante</a></button>
+                </div>
+            </div>
+        </div>    
         
-    
-    
-    
         <footer class="footer">
             <h2 class="footer__titulo">Tu diseño, tu espacio</h2>
             <div class="footer__texto">
@@ -95,9 +206,73 @@
                 </div>
             </div>
         </footer>
-    </div>
 
-	<script type="text/javascript" src="../public/js/menu.js" ></script>
+    <script type="text/javascript" src="../public/js/menu.js" ></script>
+
+    <script>
+        // Get the modals
+        var modal = document.getElementById("modal-metodo");
+        
+        var modal_card = document.getElementById("modal-card");
+
+        var modal_yape = document.getElementById("modal-yape");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("button_orden");
+
+        var card = document.getElementById("card");
+        
+        var yape = document.getElementById("yape");
+        
+        // Get the <span> and <img> element that closes or back to the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        var back_card = document.getElementById("back_card");
+
+        var back_yape = document.getElementById("back_yape");
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "flex";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if ((event.target == modal) || (event.target == modal_card) || (event.target == modal_yape)) {
+            modal.style.display = "none";
+            modal_card.style.display = "none";
+            modal_yape.style.display = "none";
+          }
+        }
+
+        back_card.onclick = function() {
+            modal.style.display = "flex";  
+            modal_card.style.display = "none";
+        }
+
+        back_yape.onclick = function() {
+            modal.style.display = "flex";  
+            modal_yape.style.display = "none";
+        }
+
+        card.onclick = function() {
+            modal.style.display = "none";  
+            modal_card.style.display = "flex";
+        }
+
+        yape.onclick = function() {
+            modal.style.display = "none";
+            modal_yape.style.display = "flex";
+        }
+
+    </script>  
+
+
+
 </body>
-
 </html>
