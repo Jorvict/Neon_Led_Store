@@ -3,7 +3,7 @@
     margin: .7rem 1rem;
 }
 label{
-    font-weight: bold;
+    font-weight: 600;
 }
 .file{
     background-color: #333333;
@@ -44,7 +44,7 @@ label{
 }
 
 .form__section {
-    margin: .4rem 0;
+    margin: .8rem 0;
 
 }
 
