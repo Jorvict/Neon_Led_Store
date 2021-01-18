@@ -8,6 +8,7 @@ label{
 .file{
     background-color: #333333;
     margin-top: .8rem;
+    padding: 0 .5rem;
 }
 .file_input{
     background-color: #333333;
@@ -15,10 +16,10 @@ label{
 }
 .file_text{
     background-color: #333333;
-    padding: .6rem 0;
+    padding: .4rem 0;
 }
 .main__titulo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: .7rem 0;
 }
 
@@ -49,7 +50,7 @@ label{
 
 .form__input {
     margin: 1rem 0;
-    height: 3rem;
+    height: 2.5rem;
     background-color: #333333;
     border: none;
     width: 100%;
