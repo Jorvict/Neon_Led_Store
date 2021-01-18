@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <script src="https://kit.fontawesome.com/c702fce202.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../public/css/shared/header.css">
     <link rel="stylesheet" href="../public/css/shared/footer.css">
+    <link rel="stylesheet" href="../public/css/shared/personaliza.css">
 </head>
+
 <body>
 
     <div class="page-container">
@@ -16,7 +19,7 @@
                 <figure class="logo-container">
                     <img src="../public/images/logo.webp" alt="">
                 </figure>
-    
+
                 <div class="list-container">
                     <nav class="menu">
                         <ul class="list-left">
@@ -40,7 +43,7 @@
                         </ul>
                     </nav>
                 </div>
-                
+
                 <div class="elements-mobile">
                     <p>Juan</p>
                     <a href="">Salir</a>
@@ -49,14 +52,76 @@
                         <i class="fas fa-bars"></i>
                     </div>
                 </div>
-    
+
             </header>
         </div>
-    
-        
-    
-    
-    
+
+
+        <main class="main">
+            <h1 class="main__titulo">Personaliza tu Diseño</h1>
+            <form class="form3" action="">
+                <div class="form3__1">
+
+
+                    <div class="form3_2">
+                        <div class="form__section">
+
+                            <label for="desea">¿Qué es lo que deseas personalizar?</label><br>
+
+                            <input class="form__input" id="desea" type="text" name="desea">
+                        </div>
+
+                        <div class="form__section">
+                            <label for="medida">Medidas</label><br>
+                            <input class="form__input" type="number" name="medida" id="medida">
+
+                        </div>
+
+                        <div class="form__section">
+
+                            <label for="archivo">Archivo:</label><br>
+                            <input class="form__file" type="file" name="archivo" id="archivo">
+                            <p>Solo archivos .png y .jpg .No mayor a 5MB,por favor.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form__section form_area">
+                        <label for="descripcion">Descripción:</label><br>
+                        <textarea class="area" id="descripcion" name="descripcion" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="form__section">
+                    <input class="form__input boton" type="submit" value="Enviar">
+                </div>
+            </form>
+
+
+
+
+
+
+
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <footer class="footer">
             <h2 class="footer__titulo">Tu diseño, tu espacio</h2>
             <div class="footer__texto">
@@ -65,7 +130,7 @@
                         neon led, pantallas led, paneles electrónicos.
                         Producto hecho en Perú.</p>
                 </div>
-                <div class="footer__section footer__ubicacion" >
+                <div class="footer__section footer__ubicacion">
                     <p class="footerC_item">
                         <span class="icono1">
                             <i class="fas fa-map-marker-alt a"></i>
@@ -73,19 +138,20 @@
                         <span class="texto"> Jr paruro 1401 tda 130 CC Shoping
                             Center Paruro, Cercado de Lima</span>
                     </p>
-                    <p class="footerC_item " >
+                    <p class="footerC_item ">
                         <span class="icono1"> <i class="fas fa-mobile-alt a"></i></span>
                         <span class="texto"> 936 910 425</span>
                     </p>
                     <p class="footerC_item">
                         <span class="icono1">
-                            <i class="fas fa-envelope a"></i> </span> <span class="texto">  info.neonledstore<wbr>@gmail.com</span>
+                            <i class="fas fa-envelope a"></i> </span> <span class="texto">
+                            info.neonledstore<wbr>@gmail.com</span>
                     </p>
                 </div>
-    
+
                 <div class="footer__section footer__social">
                     <div class="social">
-    
+
                         <a href="#" class="social__item"><i class="fab fa-facebook-square"></i></a>
                         <a href="#" class="social__item instagran"><i class="fab fa-instagram-square"></i></a>
                     </div>
@@ -94,6 +160,7 @@
         </footer>
     </div>
 
-	<script type="text/javascript" src="../public/js/menu.js" ></script>
+    <script type="text/javascript" src="../public/js/menu.js"></script>
 </body>
+
 </html>

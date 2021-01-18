@@ -1,0 +1,107 @@
+.main {
+    color: white;
+    margin: .7rem 1rem;
+}
+label{
+    font-weight: bold;
+}
+.main__titulo {
+    margin: .7rem 0;
+}
+
+.form3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.form3__1 {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form3_2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__section {
+    margin: .7rem 0;
+
+}
+
+.form__file {
+    margin: .7rem 0;
+}
+
+.form__input {
+    margin: 1rem 0;
+    height: 3rem;
+    background-color: #333333;
+    border: none;
+    width: 100%;
+}
+
+.area {border:none;
+    width: 100%;
+    background-color: #333333;
+    margin-top: 1rem ;
+
+  
+
+}
+
+.boton {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: transparent;
+    width: 50%;
+    margin: 1rem auto;
+    display: block;
+    color: white;
+    border: none;
+    border-right: white solid 2px;
+    border-bottom: white solid 2px;
+}
+
+
+@media screen and (min-width:830px) {
+.main{
+    width: 75%;
+    margin: .7rem auto;
+}
+    .form3__1 {
+       flex-direction: row;
+        
+    }
+
+    .form3_2{
+        margin-right: 2rem;
+        flex: 1;
+         
+     }
+
+.form_2{
+    flex:1;
+
+}
+.form_area{
+    flex: 1;
+}
+.area{
+    height: 100%;
+}
+
+.main__titulo{
+    text-align: center;
+    font-size: 2rem;
+}
+.form3{
+    margin: 3.5rem 0;
+}
+.boton{
+    margin-top: 4rem;
+    width: 35%;
+    cursor: pointer;
+}
+}
