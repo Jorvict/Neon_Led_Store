@@ -23,7 +23,7 @@ body {
 }
 .registrate,.identificate{
     flex: 1;text-align: center;
-    padding: 1rem;
+    padding: 2rem .1rem;
     font-weight: bold;
 }
 .identificate{
