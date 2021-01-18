@@ -1,9 +1,11 @@
+
 .main {
     color: white;
     margin: .7rem 1rem;
 }
 label{
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1rem;
 }
 .file{
     background-color: #333333;
@@ -39,14 +41,11 @@ label{
 .form3_2 {
     display: flex;
     flex-direction: column;
-    margin-bottom: .4rem;
+    margin-bottom: 1rem;
 
 }
 
-.form__section {
-    margin: .8rem 0;
 
-}
 
 .form__file {
     margin: .4rem 0;
@@ -84,6 +83,10 @@ label{
 
 
 @media screen and (min-width:830px) {
+
+   label{
+    font-size: 1.5rem
+   } 
 .main{
     width: 75%;
     margin: .7rem auto;
@@ -107,12 +110,12 @@ label{
     flex: 1;
 }
 .area{
-    height: 90%;
+    height: 83%;
 }
 
 .main__titulo{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.8rem;
 }
 .form3{
     margin: 3.5rem 0;
