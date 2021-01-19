@@ -2,11 +2,7 @@
 .formI__user{
     margin: 1rem 0;
 }
-.identificate{background-color: transparent;}
-.registrate{
-background-color:  rgba(255, 255, 255,.2);
 
-}
 .boton{
     flex-direction: column;
     align-items: center;
@@ -25,7 +21,10 @@ background-color:  rgba(255, 255, 255,.2);
     font-size: 13px;
 }
 
-
+.registrate,.identificate{
+      
+    font-size: 1.3rem;
+}
 @media screen and (min-width:830px){
     .olvidastes{
         font-size: 16px;
@@ -34,7 +33,29 @@ background-color:  rgba(255, 255, 255,.2);
 
 
     .registrate,.identificate{
-        padding: 3rem;
+      
         font-size: 2rem;
     }
+}
+
+
+.registrate_2{
+    background-color: rgba(255, 255, 255,.2);
+}
+
+.form2{
+    position:fixed;
+    opacity: 0;
+    transition: opacity .8s;
+  
+}
+
+.aparecer{
+    position: static;
+opacity: 1;
+}
+
+.ocultar{
+    display: none;
+
 }

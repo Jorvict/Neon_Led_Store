@@ -9,8 +9,13 @@ p,body {
 .footer {
     background-color: white;
     font-size: 14px;
+<<<<<<< HEAD
     padding: 1.5rem .3rem;
     color: black;
+=======
+    padding: 1.5rem ;
+    
+>>>>>>> eff8907446174715e13e57eac659f664b68c9b66
     
 }
 @media screen and (min-width:830px){
@@ -25,13 +30,18 @@ p,body {
 .footer__texto {
     display: flex;
     background-color: white;
+<<<<<<< HEAD
+=======
+flex-direction: column;
+>>>>>>> eff8907446174715e13e57eac659f664b68c9b66
     margin: 0 auto;
-    margin-top: .5rem;
+    
 }
 
 
 @media screen and (min-width:830px){
     .footer__texto {
+        flex-direction: row;
         margin-top: 1rem;
     }
 }
@@ -42,7 +52,7 @@ p,body {
         
         padding: .2rem;
         display: flex;
-       
+       margin: .5rem;
         flex-direction: column;
       
 
@@ -54,6 +64,7 @@ p,body {
         flex: .2;
         padding: 1rem;
         padding-top: 0;
+        margin: 0;
     }
 }
 
@@ -62,7 +73,7 @@ p,body {
 .social {
     display: flex;
     font-size: 2rem;
-    flex-direction: column;
+  
     align-items: center;
     
 }
@@ -72,7 +83,7 @@ p,body {
 @media screen and (min-width:830px){
     .social{
     font-size: 3rem;
-    flex-direction: row;
+  
     
     }
 }
@@ -83,12 +94,12 @@ p,body {
 
 
 
-@media screen and (min-width:830px){
+
     .instagran  {
         margin-left: 2rem;
     
     }
-}
+
 
 
 .footerC_item {
@@ -120,8 +131,8 @@ p,body {
 }
 
 .footer__titulo {
-
-    margin: 0 auto;
+    margin: 0px .5rem;
+  
     font-size: 17px;
    
 }
@@ -130,14 +141,21 @@ p,body {
     .footer__titulo {
         padding: 0 1rem;
         font-size: 32px;
+        margin: 0 auto;
     }
 }
 
 .footer__resumen {
-    flex: 2;
+    flex: 1;
     padding-right: 0;
+    order: -2;
 }
-
+@media screen and (min-width:830px){
+    .footer__resumen {
+        order:0;
+    margin-right: .5rem;}
+}
+ 
 .social__item {
     color: black;
     text-decoration: none;
@@ -154,6 +172,17 @@ p,body {
     }
     .footer__ubicacion{
         flex: 1;
+        margin-right: .5rem;
     }
 }
+
+
  
+.footer__social{
+    order: -1;
+}
+@media screen and (min-width:830px){
+    .footer__social {
+       order: 0;}
+        
+    }

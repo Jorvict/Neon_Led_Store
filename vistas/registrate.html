@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identifícate</title>
+    <title>Registrate</title>
     <script src="https://kit.fontawesome.com/c702fce202.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../public/css/shared/header.css">
     <link rel="stylesheet" href="../public/css/shared/footer.css">
+    
     <link rel="stylesheet" href="../public/css/shared/identificate.css">
+    <link rel="stylesheet" href="../public/css/shared/registrate.css">
 </head>
 
 <body>
@@ -57,13 +59,13 @@
             </header>
         </div>
     
-        <form class="formI" action="">
+        <form class="formI" id="form1" action="">
             <div class="formI__section titulo">
                 <div class="registrate">
-                    <a calss="formI__registrate" style="color: white; text-decoration: none;" href="registrate.html"> Regístrate</a>
+                    <a calss="formI__registrate" id="registrate1" style="color: white; text-decoration: none;" href="#"> Regístrate</a>
                 </div>
                 <div class="identificate">
-                    <a class="formI__identificate" href="identificate.html"> Identifícate</a>
+                    <a class="formI__identificate" id="identificate1" href="#"> Identifícate</a>
                 </div>
             </div>
     
@@ -98,6 +100,78 @@
     
     
         </form>
+
+
+
+
+
+
+
+
+        <form class="formI form2" id="form2" action="">
+            <div class="formI__section titulo">
+                <div class="registrate registrate_2">
+                    <a calss="formI__registrate" id="registrate2" style="color: white; text-decoration: none" href="#"> Regístrate</a>
+                </div>
+                <div class="identificate identificate_2" style="background-color: transparent">
+                    <a class="formI__identificate" id="identificate2" href="#"> Identifícate</a>
+                </div>
+            </div>
+    
+            <div class="formI__section datos">
+                <div class="formI__user">
+                    <i class="fas fa-user icono"></i><input class="formI_item" type="text" name="nombre"
+                        placeholder="Nombres y apellidos">
+                </div>
+    
+                <div class="formI__contra">
+                    <i class="fas fa-lock icono"></i><input class="formI_item" type="password" placeholder="Contraseña" name="contraseña">
+                </div>
+    
+                
+            </div>
+    
+            <div class="formI__section boton">
+                <div class="form1__olvidastesContra">
+                    <a class="olvidastes" href="#">¿Olvidastes tu contraseña?</a>
+                </div>
+                <input type="submit" class="formI__boton" value="Identifícate">
+            </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
         <footer class="footer">
             <h2 class="footer__titulo">Tu diseño, tu espacio</h2>
@@ -107,7 +181,7 @@
                         neon led, pantallas led, paneles electrónicos.
                         Producto hecho en Perú.</p>
                 </div>
-                <div class="footer__section footer__ubicacion" style="width: 45%;">
+                <div class="footer__section footer__ubicacion" >
                     <p class="footerC_item">
                         <span class="icono1">
                             <i class="fas fa-map-marker-alt a"></i>
@@ -115,18 +189,17 @@
                         <span class="texto"> Jr paruro 1401 tda 130 CC Shoping
                             Center Paruro, Cercado de Lima</span>
                     </p>
-                    <p class="footerC_item ">
+                    <p class="footerC_item " >
                         <span class="icono1"> <i class="fas fa-mobile-alt a"></i></span>
                         <span class="texto"> 936 910 425</span>
                     </p>
                     <p class="footerC_item">
                         <span class="icono1">
-                            <i class="fas fa-envelope a"></i> </span> <span class="texto">
-                            info.neonledstore<wbr>@gmail.com</span>
+                            <i class="fas fa-envelope a"></i> </span> <span class="texto">  info.neonledstore<wbr>@gmail.com</span>
                     </p>
                 </div>
     
-                <div class="footer__section">
+                <div class="footer__section footer__social">
                     <div class="social">
     
                         <a href="#" class="social__item"><i class="fab fa-facebook-square"></i></a>
@@ -137,6 +210,9 @@
         </footer>
 
     </div>
+
+    <script type="text/javascript" src="../public/js/menu.js" ></script>
+    <script src="../public/js/registrate.js"></script>
 </body>
 
 </html>
