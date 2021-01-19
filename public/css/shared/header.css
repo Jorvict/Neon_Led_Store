@@ -12,20 +12,23 @@ body{
     background-image: url('../../images/fondos/fondo_principal.jpg');
     display: flex;
     justify-content: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .page-container{
     width: 100vw;
-    max-width: 1366px;
+    /* max-width: 1366px; */
     height: 100vh; /*RECORDAR comentar/eliminar */
 }
 
 .cabecera-container{
+    background-image: url('../../images/fondos/fondo_principal.jpg');
     width: 100%;
-    height: 160px;
-    background-color: transparent;
+    height: 120px;
     padding: 0px 80px;
     font-family: 'Poppins', sans-serif;
+    position: fixed;
 }
 
 .cabecera-container .cabecera{
@@ -36,8 +39,8 @@ body{
 }
 
 .cabecera-container .cabecera .logo-container{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 .cabecera-container .cabecera .logo-container img{

@@ -4,28 +4,22 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgba(214, 28, 214, 0.63);
-    display: flex;
-    justify-content: center;
-}
-
 .page-container{
     width: 100vw;
-    max-width: 1366px;
-    height: 100vh; /*RECORDAR comentar/eliminar */
-    /* background-color: blue; */
+}
+
+.cabecera-container{
+    display: none;
 }
 
 /* Hero */
 .hero-container{
     width: 100%;
-    height: 600px; /*RECORDAR comentar/eliminar*/
+    height: 600px;
     background-color: black;
     display: flex;
     justify-content: space-between;
     padding: 40px 60px;
-    /* padding-bottom: 40px; */
 }
 
 .hero-container .logo-container{
@@ -85,3 +79,207 @@ body{
     height: 100%;
 }
 
+/* Seccion diseño */
+.designs-container{
+    width: 100%;
+    height: 700px;
+    background-image: url('../images/fondos/fondo_triangulo.jpg');
+    background-repeat: no-repeat;
+    /* background-size: 160% 160%; */
+    background-size: cover;
+    background-position: 50%;
+}
+
+.designs-container .background-container{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    content: '';
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.designs-container .background-container .designs-title{
+    font-size: 42px;
+    font-weight: 600;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.designs-container .background-container .designs-description-container{
+    width: 80%;
+    height: 450px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.designs-container .background-container .designs-description-container .designs-img-container{
+    width: 60%;
+    padding-right: 40px;
+}
+
+.designs-container .background-container .designs-description-container .designs-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.designs-container .background-container .designs-description-container .text-container{
+    width: 40%;
+    height: auto;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.designs-container .background-container .designs-description-container .text-container h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.designs-container .background-container .designs-description-container .text-container p{
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* Seccion contacto */
+.contact-container{
+    width: 100%;
+    height: 700px;
+    background-image: url('../images/fondos/fondo_rayo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.contact-container .contact-background-container{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    content: '';
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.contact-container .contact-background-container .contact-title{
+    font-size: 42px;
+    font-weight: 600;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.contact-container .contact-background-container .contact-form-container{
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.contact-container .contact-background-container .contact-form-container form{
+    width: 100%;
+}
+
+.contact-container .contact-background-container .contact-form-container form .inputs-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.contact-container .contact-background-container .contact-form-container form .inputs-container .left-side{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-right: 20px;
+}
+
+.contact-container .contact-background-container .contact-form-container form .inputs-container .left-side label{
+    width: 100%;
+}
+
+.contact-container .contact-background-container .contact-form-container form .inputs-container .left-side label h3{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.contact-container .contact-background-container .contact-form-container form .inputs-container .left-side label input{
+    width: 100%;
+    height: 50px;
+    background-color:#3a3a3a;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.contact-container .contact-background-container .contact-form-container form .inputs-container .left-side label input:focus{
+    outline: none;
+}
+
+.contact-container .contact-background-container .contact-form-container form .inputs-container .right-side{
+    width: 50%;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.contact-container .contact-background-container .contact-form-container form .inputs-container .right-side label{
+    width: 100%;
+}
+
+.contact-container .contact-background-container .contact-form-container form .inputs-container .right-side label h3{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.contact-container .contact-background-container .contact-form-container form .inputs-container .right-side label textarea{
+    width: 100%;
+    height: calc(100% - 60px);
+    resize: none;
+    border: none;
+    padding: 10px;
+    background-color:#3a3a3a;
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.contact-container .contact-background-container .contact-form-container form .inputs-container .right-side label textarea:focus{
+    outline: none;
+}
+
+.contact-container .contact-background-container .contact-form-container form .form-button-container{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container .contact-background-container .contact-form-container form .form-button-container .button-contact{
+    width: 20%;
+    height: 100%;
+    background-color:#3a3a3a;
+    color: white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-top: 1px solid #3a3a3a;
+    border-left: 1px solid #3a3a3a;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.contact-container .contact-background-container .contact-form-container form .form-button-container .button-contact:focus{
+    outline: none;
+}

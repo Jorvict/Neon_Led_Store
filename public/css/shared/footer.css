@@ -10,7 +10,7 @@ p,body {
     background-color: white;
     font-size: 14px;
     padding: 1.5rem .3rem;
-    
+    color: black;
     
 }
 @media screen and (min-width:830px){
@@ -25,7 +25,6 @@ p,body {
 .footer__texto {
     display: flex;
     background-color: white;
-
     margin: 0 auto;
     margin-top: .5rem;
 }
