@@ -2,6 +2,13 @@
 .main {
     color: white;
     margin: .7rem 1rem;
+    margin-top: 10rem;
+}
+@media screen and (min-width:763px){
+    .main{
+        margin-top: 0;
+    }
+
 }
 label{
     font-weight: 500;

@@ -48,6 +48,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
+    padding: 1.5rem;
 }
 
 .image-led {
@@ -62,6 +63,7 @@ body {
     width: 100%;
     background-color: rgb(51, 51, 51, 0.8);
     border-radius: 2rem;
+    margin: 2rem 0rem;
     
 }
 
