@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-image: url("./pics/fondo.webp");
+    background-image: url("../../images/fondos/fondo_principal.jpg");
     display: grid;
     width: 100%;
     height: 100%;
