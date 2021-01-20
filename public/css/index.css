@@ -60,8 +60,16 @@
     margin-right: 70px;
 }
 
+.hero-container .right-container .menu ul.list-left li a{
+    color: white;
+}
+
 .hero-container .right-container .menu ul.list-right{
     padding-right: 20px;
+}
+
+.hero-container .right-container .menu ul.list-right li a{
+    color: white;
 }
 
 .hero-container .right-container .menu ul.list-right li i{
@@ -282,4 +290,142 @@
 
 .contact-container .contact-background-container .contact-form-container form .form-button-container .button-contact:focus{
     outline: none;
+}
+
+@media screen and (max-width:768px){
+
+    .cabecera-container{
+        display: block;
+    }
+
+    .hero-container{
+        padding-top: 140px;
+    }
+
+    .hero-container .right-container{
+        width: 100%;
+    }
+
+    .hero-container .logo-container,
+    .hero-container .right-container .menu{
+        display: none;
+    }
+
+    .designs-container{
+        height: auto;
+        /* min-height: 100%; */
+    }
+
+    .designs-container .background-container{
+        padding-bottom: 40px;
+    }
+
+    .designs-container .background-container .designs-title{
+        text-align: center;
+    }
+
+    .designs-container .background-container .designs-description-container{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .designs-container .background-container .designs-description-container .designs-img-container{
+        padding: 0px;
+        width: 100%;
+        height: 450px;
+    }
+    
+
+    .designs-container .background-container .designs-description-container .text-container{
+        width: 100%;
+    }
+
+    .designs-container .background-container .designs-description-container .text-container h3{
+        text-align: center;
+    }
+
+    .contact-container .contact-background-container .contact-form-container{
+        width: 90%;
+    }
+
+    .contact-container .contact-background-container .contact-form-container form .inputs-container .left-side label h3,
+    .contact-container .contact-background-container .contact-form-container form .inputs-container .right-side label h3{
+        font-size: 28px;
+    }
+
+    .contact-container .contact-background-container .contact-form-container form .inputs-container .right-side label textarea{
+        height: calc(100% - 54px);
+    }
+
+    .contact-container .contact-background-container .contact-form-container form .form-button-container .button-contact{
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width:425px){
+
+    .hero-container{
+        height: auto;
+        padding: 0px;
+    }
+
+    .hero-container .right-container .video-container{
+        height: auto;
+    }
+
+    .designs-container .background-container .designs-title{
+        font-size: 32px;
+    }
+    
+    .designs-container .background-container .designs-description-container{
+        width: 90%;
+    }
+
+    .designs-container .background-container .designs-description-container .designs-img-container{
+        height: 350px;
+    }
+
+    .designs-container .background-container .designs-description-container .text-container{
+        padding: 0;
+        padding-top: 30px;
+    }
+
+    .contact-container .contact-background-container{
+        padding-bottom: 40px;
+    }
+
+    .contact-container .contact-background-container .contact-form-container form .inputs-container{
+        flex-wrap: wrap;
+    }
+
+    .contact-container .contact-background-container .contact-form-container form .inputs-container .left-side,
+    .contact-container .contact-background-container .contact-form-container form .inputs-container .right-side{
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact-container,
+    .contact-container .contact-background-container .contact-form-container,
+    .contact-container .contact-background-container .contact-form-container form,
+    .contact-container .contact-background-container .contact-form-container form .inputs-container{
+        height: auto;
+    }
+
+    .contact-container .contact-background-container .contact-form-container form .inputs-container .left-side label{
+        margin-bottom: 20px;
+    }
+
+    .contact-container .contact-background-container .contact-form-container form .inputs-container .left-side label h3,
+    .contact-container .contact-background-container .contact-form-container form .inputs-container .right-side label h3{
+        margin: 0;
+    }
+
+    .contact-container .contact-background-container .contact-form-container form .inputs-container .right-side label textarea{
+        height: 250px;
+    }
+
+    .contact-container .contact-background-container .contact-form-container form .form-button-container .button-contact{
+        width: 45%;
+    }
 }

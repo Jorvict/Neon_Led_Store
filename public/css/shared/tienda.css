@@ -1,0 +1,36 @@
+.main{
+    padding-top: 120px;
+    display: flex;
+}
+
+/* Menu izquierdo */
+.main .menu-left{
+    width: 20%;
+    margin-left: 80px;
+    padding-top: 80px;
+}
+    .main .menu-left .menu-title{
+        font-size: 32px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        padding-left: 30px;
+    }
+    .main .menu-left .menu-categories ul{
+        list-style: none;
+    }
+    .main .menu-left .menu-categories ul li{
+        margin-bottom: 5px;
+        min-width: 150px;
+        max-width: 220px;
+        padding-left: 30px;
+    }
+    .main .menu-left .menu-categories ul li:hover{
+        background-color: white;
+        color: black;
+    }
+    .main .menu-left .menu-categories ul li a{
+        color: inherit;
+        font-size: 28px;
+        font-weight: 100;
+    }
+    

@@ -9,14 +9,8 @@ p,body {
 .footer {
     background-color: white;
     font-size: 14px;
-<<<<<<< HEAD
-    padding: 1.5rem .3rem;
-    color: black;
-=======
     padding: 1.5rem ;
-    
->>>>>>> eff8907446174715e13e57eac659f664b68c9b66
-    
+    color: black;   
 }
 @media screen and (min-width:830px){
     .footer{
@@ -30,12 +24,8 @@ p,body {
 .footer__texto {
     display: flex;
     background-color: white;
-<<<<<<< HEAD
-=======
-flex-direction: column;
->>>>>>> eff8907446174715e13e57eac659f664b68c9b66
+    flex-direction: column;
     margin: 0 auto;
-    
 }
 
 
