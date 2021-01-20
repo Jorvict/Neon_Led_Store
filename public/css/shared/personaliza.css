@@ -74,14 +74,21 @@ label{
   
 
 }
-
-.boton {
+.boton{
     font-weight: bold;
     font-size: 20px;
-    background-color: transparent;
+   background-color: white;
     width: 50%;
     margin: 1rem auto;
     display: block;
+    color: black;
+    transition: background .3s;
+}
+.boton:hover{
+    
+    background-color: transparent;
+   
+    
     color: white;
     border: none;
     border-right: white solid 2px;
