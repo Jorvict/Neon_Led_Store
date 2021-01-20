@@ -6,6 +6,10 @@
     font-family: 'poppinsb';
     src: url('../../../public/fuentes/Poppins-Bold.ttf');
 }
+@font-face {
+    font-family: 'poppinst';
+    src: url('../../../public/fuentes/Poppins-Thin.ttf');
+}
 
 *{font-family: poppinsr;
     margin: 0;
@@ -33,7 +37,7 @@ body{
     width: 100%;
     height: 160px;
     background-color: transparent;
-    padding: 0px 80px;
+    padding: 0px 90px;
     font-family: 'Poppins', sans-serif;
 }
 

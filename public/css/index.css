@@ -152,6 +152,7 @@
 .designs-container .background-container .designs-description-container .text-container p{
     font-weight: 100;
     font-size: 20px;
+    font-family: 'poppinst';
 }
 
 
@@ -228,8 +229,7 @@
     font-size: 18px;
     border: none;
     padding: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
+    font-family: 'poppinst';
 }
 
 .contact-container .contact-background-container .contact-form-container form .inputs-container .left-side label input:focus{
@@ -261,8 +261,7 @@
     background-color:#3a3a3a;
     color: white;
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
+    font-family: 'poppinst';
 }
 
 .contact-container .contact-background-container .contact-form-container form .inputs-container .right-side label textarea:focus{
