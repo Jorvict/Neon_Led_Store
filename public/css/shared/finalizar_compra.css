@@ -831,7 +831,9 @@ body {
     }
 
 }
-
+.footer{
+    padding: 3rem;
+}
 
 @media screen and (min-width:830px){
     .footer{

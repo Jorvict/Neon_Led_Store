@@ -301,3 +301,22 @@ margin-bottom: .8rem;}}
 
 .cabecera-container .cabecera .list-container .menu ul.list-right {
     padding-right: 31px;}
+
+    .order{
+        order: -1;}
+        .footer{
+            padding: 3rem;
+        }
+   
+
+    @media screen and (min-width:770px){
+        .order{
+            order: 0;}
+            .footer{
+                padding: 4rem;
+                padding: 30px 67px;
+            }
+            
+        }
+
+       
