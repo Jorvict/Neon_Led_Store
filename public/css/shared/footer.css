@@ -15,9 +15,8 @@ p,body {
 @media screen and (min-width:830px){
     .footer{
     font-size: 1rem;
-    padding: 4rem;
-    padding-left: 6.5rem;
-    padding-right: 6.5rem;
+    padding: 30px 63px;
+  
     }
 }
 
@@ -31,8 +30,9 @@ p,body {
 
 @media screen and (min-width:830px){
     .footer__texto {
+        font-size: 16px;
         flex-direction: row;
-        margin-top: 1rem;
+        margin-top: .3rem;
     }
 }
 
@@ -86,7 +86,7 @@ p,body {
 
 
     .instagran  {
-        margin-left: 2rem;
+        margin-left: 1rem;
     
     }
 
@@ -123,12 +123,13 @@ p,body {
 .footer__titulo {
     margin: 0px .5rem;
   
-    font-size: 17px;
+    font-size: 29px;
    
 }
 
 @media screen and (min-width:830px){
     .footer__titulo {
+        font-family: poppinsb;
         padding: 0 1rem;
         font-size: 32px;
         margin: 0 auto;
@@ -161,8 +162,8 @@ p,body {
         
     }
     .footer__ubicacion{
-        flex: 1;
-        margin-right: .5rem;
+        flex: 1.3;
+        
     }
 }
 

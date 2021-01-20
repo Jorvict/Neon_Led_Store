@@ -6,6 +6,7 @@
 
 .page-container{
     width: 100vw;
+    color: white;
 }
 
 .cabecera-container{
@@ -214,7 +215,7 @@
 }
 
 .contact-container .contact-background-container .contact-form-container form .inputs-container .left-side label h3{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
     margin-bottom: 12px;
 }
@@ -246,14 +247,14 @@
 }
 
 .contact-container .contact-background-container .contact-form-container form .inputs-container .right-side label h3{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
     margin-bottom: 12px;
 }
 
 .contact-container .contact-background-container .contact-form-container form .inputs-container .right-side label textarea{
     width: 100%;
-    height: calc(100% - 60px);
+    height: calc(100% - 54px);
     resize: none;
     border: none;
     padding: 10px;
@@ -284,8 +285,14 @@
     border-right: 1px solid white;
     border-top: 1px solid #3a3a3a;
     border-left: 1px solid #3a3a3a;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.contact-container .contact-background-container .contact-form-container form .form-button-container .button-contact:hover{
+    background-color:black;
+    transition: .3s;
 }
 
 .contact-container .contact-background-container .contact-form-container form .form-button-container .button-contact:focus{
