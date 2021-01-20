@@ -372,9 +372,14 @@
 
 @media screen and (max-width:425px){
 
+    .cabecera-container{
+        z-index: 50;
+    }
+
     .hero-container{
         height: auto;
         padding: 0px;
+        padding-top: 140px;
     }
 
     .hero-container .right-container .video-container{
