@@ -90,13 +90,12 @@ label{
 }
 .boton:hover{
     
-    background-color: transparent;
+    background-color: black;
    
     
     color: white;
-    border: none;
-    border-right: white solid 2px;
-    border-bottom: white solid 2px;
+  
+ 
 }
 
 

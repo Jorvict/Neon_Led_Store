@@ -143,11 +143,10 @@ body {
 
 .button_orden:hover{
     cursor: pointer;
-    background-color: transparent;
+    background-color: black;
     color: white;
-    border: none;
-    border-right: white solid 2px;
-    border-bottom: white solid 2px;
+ 
+   
 }
 .button_orden a {
     text-decoration: none;

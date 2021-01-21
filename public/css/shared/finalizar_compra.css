@@ -12,6 +12,16 @@ html {
     height: 100%;
 }
 
+.delivery{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    padding-left: 0;
+    align-items: baseline;
+   
+}
+
 body {
     background-image: url("../../images/fondos/fondo_principal.jpg");
     display: grid;
@@ -68,18 +78,18 @@ body {
     transition: background .3s;
 }
 
+
+
 .button_title:hover{
     
-    background-color: transparent;
-    color: white;
+    background-color: black;
+ 
     border: none;
-    border-right: white solid 2px;
-    border-bottom: white solid 2px;
+color: white;
 }
 
-.button_title a {
-    text-decoration: none;
-    color: black;
+.button_title a:hover{
+    color: white;
 }
 
 /* ---------------------------------- */
@@ -120,11 +130,10 @@ body {
     transition: background .3s;
 }
 .button_orden:hover{
-    background-color: transparent;
+    background-color: black;
     color: white;
-    border: none;
-    border-right: white solid 2px;
-    border-bottom: white solid 2px;
+   
+ 
 }
 /* ---------------------------------- */
 
@@ -147,6 +156,7 @@ body {
     background-color: rgb(51, 51, 51, 0.8);
     padding: 1rem;
     margin-top: 6rem;
+    height: 75%;
 }
 
 .orden_box .header-order {
@@ -183,7 +193,7 @@ body {
 .orden_box .total {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     font-weight: bold;
 }
 
@@ -876,6 +886,10 @@ margin-bottom: .8rem;}}
         }
 
     @media screen and (min-width:770px){
+       .orden_box{
+           height: 45%;
+       }
+       
         .formulario{
             margin-top: 5rem;
             margin-bottom: 10rem;
