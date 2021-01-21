@@ -874,16 +874,22 @@ margin-bottom: .8rem;}}
           
         height: 100%;
         margin-left: .4rem;}
+        .formulario{
+            margin-top: 5rem;
+            margin-bottom: -1rem;
+        }
 
     @media screen and (min-width:770px){
+        .formulario{
+            margin-top: 5rem;
+            margin-bottom: 10rem;
+        }
     .cabecera-container .cabecera {
       
         height: 100%;
-        margin-left: 1rem;}}
+        margin-left: 1rem;}
+    }
     .title{
         margin-top:0;
     }
-.formulario{
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-}}
+
