@@ -861,3 +861,16 @@ margin-bottom: .8rem;}}
 
 .cabecera-container .cabecera .list-container .menu ul.list-right {
     padding-right: 31px;}
+
+
+
+    .cabecera-container .cabecera {
+          
+        height: 60%;
+        margin-left: .4rem;}
+
+    @media screen and (min-width:770px){
+    .cabecera-container .cabecera {
+      
+        height: 60%;
+        margin-left: 1rem;}}

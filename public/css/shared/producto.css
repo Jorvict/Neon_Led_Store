@@ -207,7 +207,7 @@ body {
 
     .contenido {
         margin-top: 7rem;
-        width: 70%;
+        width: 90%;
         grid-area: contenido;
         display: grid;
         grid-template: 1fr 0.7fr / 1fr;
@@ -319,4 +319,16 @@ margin-bottom: .8rem;}}
             
         }
 
+
+
+        .cabecera-container .cabecera {
+          
+            height: 60%;
+            margin-left: .4rem;}
+
+        @media screen and (min-width:770px){
+        .cabecera-container .cabecera {
+          
+            height: 60%;
+            margin-left: 1rem;}}
        
