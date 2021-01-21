@@ -11,7 +11,7 @@
 .main .menu-left{
     width: 20%;
     /* margin-left: 90px; */
-    padding-top: 80px;
+    padding-top: 150px;
 }
     .main .menu-left .menu-title{
         font-size: 32px;
@@ -40,28 +40,25 @@
 
 /* Seccion Tienda */
 .main .shop{
+    padding-top: 50px;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: pink;
 }
     .main .shop .shop-title{
         font-size: 42px;
     }
     .main .shop .articles-section{
         width: 100%;
-        /* height: 500px; */
-        background: yellow;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        padding-top: 25px;
+        padding-top: 120px;
     }
     .main .shop .articles-section .article-card{
         width: 30%;
         height: 200px;
-        background: red;
         margin-bottom: 25px;
         border-radius: 15px;
         overflow: hidden;
@@ -74,3 +71,76 @@
         width: 100%;
         height: 100%;
     }
+
+@media screen and (max-width:768px){
+
+    .main{
+        flex-wrap: wrap;
+    }
+
+    /* Menu izquierdo */
+    .main .menu-left{
+        width: 100%;
+    }
+    .main .menu-left .menu-title{
+        text-align: center;
+        padding: 0px;
+    }
+    .main .menu-left .menu-categories{
+        display: flex;
+    }
+    .main .menu-left .menu-categories ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .main .menu-left .menu-categories ul li{
+        padding: 0px;
+        min-width: 180px;
+    }
+
+    /* Sección tienda */
+    .main .shop{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .main .shop .articles-section{
+        padding-top: 60px;
+    }
+    .main .shop .articles-section .article-card{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:425px){
+    .main{
+        padding: 0px 20px;
+    }
+    .main .menu-left{
+        padding-top: 120px;
+    }
+    .main .menu-left .menu-categories ul{
+        justify-content: center;
+        height: 150px;
+        overflow: scroll;
+    }
+    .main .menu-left .menu-categories ul li{
+        width: 60%;
+        max-width: initial;
+    }
+    .main .shop{
+        padding-top: 30px;
+    }
+    .main .shop .articles-section{
+        padding-top: 30px;
+    }
+    .main .shop .articles-section .article-card{
+        width: 90%;
+    }
+
+}
+
+
+
