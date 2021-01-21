@@ -391,7 +391,7 @@
     }
 
     .designs-container .background-container .designs-title{
-        font-size: 32px;
+        font-size: 30px;
     }
     
     .designs-container .background-container .designs-description-container{
@@ -409,6 +409,11 @@
 
     .contact-container .contact-background-container{
         padding-bottom: 40px;
+    }
+
+    .contact-container .contact-background-container .contact-title{
+        width: 90%;
+        font-size: 30px;
     }
 
     .contact-container .contact-background-container .contact-form-container form .inputs-container{
