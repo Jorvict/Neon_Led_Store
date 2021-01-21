@@ -13,6 +13,9 @@
     /* margin-left: 90px; */
     padding-top: 150px;
 }
+    .main .menu-left .shop-title-mobile{
+        display: none;
+    }
     .main .menu-left .menu-title{
         font-size: 32px;
         margin-bottom: 20px;
@@ -56,6 +59,30 @@
         flex-wrap: wrap;
         padding-top: 120px;
     }
+    .main .shop .articles-section .personaliza-container{
+        position: absolute;
+        height: 100%;
+        right: 0;
+    }
+    .main .shop .articles-section .personaliza-container .personaliza-title-container{
+        position: sticky;
+        top: 300px;
+        padding-top: 200px;
+    }
+    .main .shop .articles-section .personaliza-container .personaliza-title-container .personaliza-title{
+        background-color: white;
+        color: black;
+        width: 360px;
+        font-size: 42px;
+        padding-left: 30px;
+        padding-right: 80px;
+        font-family: 'poppinsb';
+    }
+    .main .shop .articles-section .personaliza-container .personaliza-title-container .personaliza-title a{
+        color: inherit;
+    }
+
+
     .main .shop .articles-section .article-card{
         width: 30%;
         height: 200px;
@@ -82,9 +109,16 @@
     .main .menu-left{
         width: 100%;
     }
+    .main .menu-left .shop-title-mobile{
+        display: block;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
     .main .menu-left .menu-title{
         text-align: center;
         padding: 0px;
+        font-size: 30px;
     }
     .main .menu-left .menu-categories{
         display: flex;
@@ -106,8 +140,11 @@
         width: 100%;
         padding-bottom: 20px;
     }
+    .main .shop .shop-title{
+        display: none;
+    }
     .main .shop .articles-section{
-        padding-top: 60px;
+        padding-top: 10px;
     }
     .main .shop .articles-section .article-card{
         width: 45%;
