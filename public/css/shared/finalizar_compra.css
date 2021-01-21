@@ -831,3 +831,33 @@ body {
     }
 
 }
+.footer{
+    padding: 3rem;
+}
+
+@media screen and (min-width:830px){
+    .footer{
+        font-size: 1.6rem;
+        padding: 4rem;
+        padding: 30px 67px;
+        }
+.instagran{    margin-left: 1.5rem;}}
+
+.texto{
+    margin-left: 1rem;
+}
+
+
+
+@media screen and (min-width: 830px)
+{
+.footerC_item {
+
+margin-bottom: .8rem;}}
+
+
+
+
+
+.cabecera-container .cabecera .list-container .menu ul.list-right {
+    padding-right: 31px;}

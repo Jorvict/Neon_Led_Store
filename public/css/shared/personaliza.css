@@ -2,6 +2,13 @@
 .main {
     color: white;
     margin: .7rem 1rem;
+    margin-top: 10rem;
+}
+@media screen and (min-width:763px){
+    .main{
+        margin-top: 0;
+    }
+
 }
 label{
     font-weight: 500;
@@ -67,14 +74,21 @@ label{
   
 
 }
-
-.boton {
+.boton{
     font-weight: bold;
     font-size: 20px;
-    background-color: transparent;
+   background-color: white;
     width: 50%;
     margin: 1rem auto;
     display: block;
+    color: black;
+    transition: background .3s;
+}
+.boton:hover{
+    
+    background-color: transparent;
+   
+    
     color: white;
     border: none;
     border-right: white solid 2px;
