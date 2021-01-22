@@ -1,67 +1,66 @@
 body {
     background-image: url(../../images/fondos/fondo_principal.jpg);
 }
-.formI{
-    background-color:rgba(58, 57, 57, 0.8);
-    margin:2rem;
+
+.formI {
+    background-color: rgba(58, 57, 57, 0.8);
+    margin: 2rem;
     display: flex;
     flex-direction: column;
     color: white;
     margin-top: 10rem;
-    
 }
 
-
-@media screen and (min-width:763px){
-    .formI{
+@media screen and (min-width:763px) {
+    .formI {
         margin-top: 0;
     }
-
 }
-@media screen and (min-width:1200px){
-    .formI{
-    width: 33%;
-    margin: 4rem auto;
-    margin-top: 2.5rem;
-}}
 
-.formI__section{
+@media screen and (min-width:1200px) {
+    .formI {
+        width: 33%;
+        margin: 4rem auto;
+        margin-top: 2.5rem;
+    }
+}
+
+.formI__section {
     display: flex;
-    padding-bottom:1.5rem ;
-    
-  
+    padding-bottom: 1.5rem;
 }
-.registrate,.identificate{
-    flex: 1;text-align: center;
+
+.registrate,
+.identificate {
+    flex: 1;
+    text-align: center;
     padding: 2rem .1rem;
     font-weight: bold;
 }
-.identificate{
-    background-color:rgba(255, 255, 255,.2);
+
+.identificate {
+    background-color: rgba(255, 255, 255, .2);
 }
 
-.formI__registrate,.formI__identificate{
+.formI__registrate,
+.formI__identificate {
     text-decoration: none;
     color: white;
 }
 
-
-
-
-
-.datos{
+.datos {
     flex-direction: column;
-   
     padding: 0 1rem;
-  
 }
 
-@media screen and (min-width:1200px){
-    .datos{padding: 0 3rem;}}
+@media screen and (min-width:1200px) {
+    .datos {
+        padding: 0 3rem;
+    }
+}
 
-
-.formI__boton{
-    width:55%;
+.formI__boton {
+    width: 55%;
     border: none;
     margin: 0 auto;
     color: black;
@@ -70,127 +69,117 @@ body {
     transition: background .3s;
 }
 
-.formI__boton:hover{
+.formI__boton:hover {
     cursor: pointer;
     background-color: black;
     color: white;
-    
-  
 }
 
-@media screen and (min-width:1200px){
-    .formI__boton{
+@media screen and (min-width:1200px) {
+    .formI__boton {
         padding: 1.5rem;
         font-size: 20px;
-    }}
-
-.formI__user,.formI__email,.formI__contra{
-    display: flex;
-      margin: .8rem 0;
-  
-    
-  
-
+    }
 }
 
-
-.formI__email{
+.formI__user,
+.formI__email,
+.formI__contra {
+    display: flex;
     margin: .8rem 0;
 }
-.icono{
+
+
+.formI__email {
+    margin: .8rem 0;
+}
+
+.icono {
     justify-content: center;
     height: 45px;
     flex: .3;
     display: flex;
     align-items: center;
-  padding: .1rem;
+    padding: .1rem;
     margin-right: .3rem;
-    
-    background-color: rgba(128, 128, 128,.2);
+    background-color: rgba(128, 128, 128, .2);
 }
 
 
-.formI_item{
-    background-color: rgba(128, 128, 128,.2);
+.formI_item {
+    background-color: rgba(128, 128, 128, .2);
     flex: 4;
     border: none;
     padding: .1rem;
     height: 45px;
 }
-.boton{
+
+.boton {
     margin-top: 2rem;
     margin-bottom: 3rem;
-   
 }
 
-@media screen and (min-width:1110px){
-    .identificate,.registrate{
+@media screen and (min-width:1110px) {
+
+    .identificate,
+    .registrate {
         padding: 2.5rem 1.5rem;
-        font-size:2rem;
-        flex:1;
-    }}/*  */
+        font-size: 2rem;
+        flex: 1;
+    }
+}
 
-
-
-
-
-.formI__user{
+.formI__user {
     margin: 1rem 0;
 }
 
-.boton{
+.boton {
     flex-direction: column;
     align-items: center;
     padding: 0 1rem;
 }
 
-
-.form1__olvidastesContra{
+.form1__olvidastesContra {
     align-self: flex-end;
     padding: 0rem;
     margin-bottom: 1rem;
 }
-.olvidastes{
+
+.olvidastes {
     text-decoration: none;
     color: white;
     font-size: 13px;
 }
 
-.registrate,.identificate{
-      
+.registrate,
+.identificate {
+
     font-size: 1.3rem;
 }
-@media screen and (min-width:830px){
-    .olvidastes{
+
+@media screen and (min-width:830px) {
+    .olvidastes {
         font-size: 16px;
     }
-    .boton{  padding: 0 3rem;}
-
-
-    .registrate,.identificate{
-      
+    .boton {
+        padding: 0 3rem;
+    }
+    .registrate,
+    .identificate {
         font-size: 2rem;
     }
 }
-
-
-.registrate_2{
-    background-color: rgba(255, 255, 255,.2);
+.registrate_2 {
+    background-color: rgba(255, 255, 255, .2);
 }
-
-.form2{
-    position:fixed;
+.form2 {
+    position: fixed;
     opacity: 0;
-    
-  
 }
-
-.aparecer{
+.aparecer {
     position: static;
-opacity: 1;
+    opacity: 1;
 }
-
-.ocultar{
+.ocultar {
     display: none;
-
 }
