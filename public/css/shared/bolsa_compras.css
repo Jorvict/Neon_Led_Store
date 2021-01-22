@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
+    order: -1;
 }
 .radio{
     margin-right: 1.5rem;
@@ -19,14 +20,18 @@
     }
 
 }
-
+ .resumen{
+    display: flex;
+    flex-direction: column;
+ }
 
 
 .main__titulo 
 {padding: 0 1rem;}
 
 .main__texto{
-font-size: 1.5rem;
+font-size: 30px;
+text-align: center;
 }
 .resumen{
     background-color: rgb(51, 51, 51, 0.8);
@@ -77,6 +82,7 @@ flex: 1.3;
     display: flex;
     justify-content: space-between;
     padding: 1rem 1rem;
+    order: -2;
 }
 
 .resumen__subTotal{
@@ -108,7 +114,7 @@ flex: 1.3;
 .boton{
     font-weight: 700;
     padding: .5rem;
-    font-weight: bold;
+    
     font-size: 20px;
     transition: background .2s;
   
@@ -116,11 +122,11 @@ flex: 1.3;
 
 .boton:hover{
     cursor: pointer;
-    background-color: transparent;
+    background-color: black;
     color: white;
-    border: none;
-    border-right: white solid 2px;
-    border-bottom: white solid 2px;
+    
+    /* border-right: white solid 2px;
+    border-bottom: white solid 2px; */
 }
 
 
@@ -128,9 +134,13 @@ flex: 1.3;
 @media screen and (min-width:770px){
 .main__titulo{
     margin-left: 3rem;
+   
 }
 .main__texto{
     font-size: 2rem;
+    text-align: start;
+    font-size: 42px;
+    margin-bottom: 1.5rem;
 }
 .main__section{
     display: flex;
