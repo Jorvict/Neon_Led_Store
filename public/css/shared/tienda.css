@@ -1,16 +1,13 @@
 .main{
-    /* padding-top: 80px; */
     display: flex;
     color: white;
     padding-right: 90px;
     padding-left: 90px;
-
 }
 
 /* Menu izquierdo */
 .main .menu-left{
     width: 20%;
-    /* margin-left: 90px; */
     padding-top: 150px;
 }
     .main .menu-left .shop-title-mobile{
@@ -62,8 +59,8 @@
     .main .shop .articles-section .link-container{
         background-color: white;
         color: black;
-        width: 360px;
-        font-size: 36px;
+        width: 300px;
+        font-size: 32px;
         padding-left: 30px;
         padding-right: 30px;
         position: fixed;
