@@ -8,14 +8,14 @@ let form = document.getElementById("form1")
 identificate.addEventListener("click", (e) => {
    e.preventDefault()
     
-    form.classList.add("ocultar")
-    form2.classList.add("aparecer")
+    form2.classList.remove("ocultar")
+    form.classList.remove("aparecer")
 })
 
 registrate2.addEventListener("click",(e)=>{
 e.preventDefault()
-form2.classList.remove("aparecer")
-form.classList.remove("ocultar")
+form.classList.add("aparecer")
+form2.classList.add("ocultar")
 
 })
 
