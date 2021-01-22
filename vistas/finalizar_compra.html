@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +9,8 @@
     <link rel="stylesheet" href="../public/css/shared/footer.css">
     <link rel="stylesheet" href="../public/css/shared/finalizar_compra.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
     <div class="cabecera-container">
@@ -45,7 +42,7 @@
                     </ul>
                 </nav>
             </div>
-
+            
             <div class="elements-mobile">
                 <p>Juan</p>
                 <a href="">Salir</a>
@@ -59,8 +56,8 @@
     </div>
 
     <div class="title">
-        <h3 class="finalizar">Finalizar Compra</h3>
-        <button class="button_title" type="button">Seguir Comprando</button>
+        <h3>Finalizar Compra</h3>
+        <button class="button_title" type="button"><a href="bolsa_compras.html">Seguir Comprando</a></button>
     </div>
 
     <div class="formulario">
@@ -79,33 +76,32 @@
         </form>
     </div>
 
-    <form action="" class="orden">
+    <form class="orden">
         <div class="orden_box">
             <div class="header-order">
                 <p>Resumen de tu orden</p>
-                <a href="bolsa_compras.html">Editar Carrito</a>
+                <a href="">Editar Carrito</a>
             </div>
             <div class="subtotal">
                 <p>Sub-Total Productos</p>
                 <span id="subtotal">S/. 136.50 </span>
             </div>
             <div class="delivery">
-                <label for="radio">Delivery (s/10)</label>
-                <input class="radio" type="checkbox" name="delivery" id="radio">
+               <label for="delivery">Delivery (s/10)</label>
+               <input type="checkbox"  name="deliver" id="delivery" class="check">
             </div>
-
             <div class="total">
                 <p>Total</p>
                 <span id="total">S/. 136.50 </span>
             </div>
-            <input type="submit" value="Finalizar Compra"  class="button_orden" id="button_orden" type="button">
+            <button class="button_orden" id="button_orden" type="button">Finalizar Compra</button>
         </div>
-    </form> 
+    </form>
 
 
     <!-- Modal Metodo de Pago -->
     <div id="modal-metodo" class="modal">
-        <!-- Modal content -->
+    <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
                 <h3>Selecciona el método del pago</h3>
@@ -114,7 +110,7 @@
             <div class="modal-body">
                 <div class="modal-body-card">
                     <img id="card" src="../public/images/payment_card.JPG" alt="">
-                    <p>Transferencia bancaria</p>
+                    <p>Transferencia bancaria</p>    
                 </div>
                 <div class="modal-body-yape">
                     <img id="yape" src="../public/images/payment_yape.JPG" alt="">
@@ -129,7 +125,7 @@
 
     <!-- Modal Card -->
     <div id="modal-card" class="modal_card">
-        <!-- Modal content -->
+    <!-- Modal content -->
         <div class="modal-content_card">
             <div class="modal-header_card">
                 <h3>Selecciona el método del pago</h3>
@@ -148,75 +144,74 @@
                 <button class="modal-button-compra_card" type="button"><a href="">Enviar Comprobante</a></button>
             </div>
         </div>
-    </div>
+    </div>    
 
     <!-- Modal Yape -->
     <div id="modal-yape" class="modal_yape">
         <!-- Modal content -->
-        <div class="modal-content_yape">
-            <div class="modal-header_yape">
-                <h3>Selecciona el método del pago</h3>
-                <img id="back_yape" src="../public/images/back_arrow.JPG" alt="atras">
-            </div>
-            <div class="modal-body_yape">
-                <form class="modal-body-card_yape">
-                    <img id="QR" src="../public/images/QR_method.JPG" alt="QR">
-                    <p>N° Celular</p>
-                    <p id="cellphone">999888777</p>
-                </form>
-                <div class="modal-body-yape_yape">
-                    <img src="../public/images/payment_yape.JPG" alt="Pago con Yape">
+            <div class="modal-content_yape">
+                <div class="modal-header_yape">
+                    <h3>Selecciona el método del pago</h3>
+                    <img id="back_yape" src="../public/images/back_arrow.JPG" alt="atras">
+                </div>
+                <div class="modal-body_yape">
+                    <form class="modal-body-card_yape">
+                        <img id="QR" src="../public/images/QR_method.JPG" alt="QR">
+                        <p>N° Celular</p>
+                        <p id="cellphone">999888777</p>
+                    </form>
+                    <div class="modal-body-yape_yape">
+                        <img src="../public/images/payment_yape.JPG" alt="Pago con Yape">
+                    </div>
+                </div>
+                <div class="modal-footer_yape">
+                    <button class="modal-button-compra_yape" type="button"><a href="">Enviar Comprobante</a></button>
                 </div>
             </div>
-            <div class="modal-footer_yape">
-                <button class="modal-button-compra_yape" type="button"><a href="">Enviar Comprobante</a></button>
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <h2 class="footer__titulo">Tu diseño, tu espacio</h2>
-        <div class="footer__texto">
-            <div class="footer__section footer__resumen">
-                <p>Somos fabricantes e importamos artículos
-                    neon led, pantallas led, paneles electrónicos.
-                    Producto hecho en Perú.</p>
-            </div>
-            <div class="footer__section footer__ubicacion">
-                <p class="footerC_item">
-                    <span class="icono1">
-                        <i class="fas fa-map-marker-alt a"></i>
-                    </span>
-                    <span class="texto"> Jr paruro 1401 tda 130 CC Shoping
-                        Center Paruro, Cercado de Lima</span>
-                </p>
-                <p class="footerC_item ">
-                    <span class="icono1"> <i class="fas fa-mobile-alt a"></i></span>
-                    <span class="texto"> 936 910 425</span>
-                </p>
-                <p class="footerC_item">
-                    <span class="icono1">
-                        <i class="fas fa-envelope a"></i> </span> <span class="texto">
-                        info.neonledstore<wbr>@gmail.com</span>
-                </p>
-            </div>
-
-            <div class="footer__section footer__social">
-                <div class="social">
-
-                    <a href="#" class="social__item"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#" class="social__item instagran"><i class="fab fa-instagram-square"></i></a>
+        </div>    
+        
+        <footer class="footer">
+            <h2 class="footer__titulo">Tu diseño, tu espacio</h2>
+            <div class="footer__texto">
+                <div class="footer__section footer__resumen">
+                    <p>Somos fabricantes e importamos artículos
+                        neon led, pantallas led, paneles electrónicos.
+                        Producto hecho en Perú.</p>
+                </div>
+                <div class="footer__section footer__ubicacion" >
+                    <p class="footerC_item">
+                        <span class="icono1">
+                            <i class="fas fa-map-marker-alt a"></i>
+                        </span>
+                        <span class="texto"> Jr paruro 1401 tda 130 CC Shoping
+                            Center Paruro, Cercado de Lima</span>
+                    </p>
+                    <p class="footerC_item " >
+                        <span class="icono1"> <i class="fas fa-mobile-alt a"></i></span>
+                        <span class="texto"> 936 910 425</span>
+                    </p>
+                    <p class="footerC_item">
+                        <span class="icono1">
+                            <i class="fas fa-envelope a"></i> </span> <span class="texto">  info.neonledstore<wbr>@gmail.com</span>
+                    </p>
+                </div>
+    
+                <div class="footer__section footer__social">
+                    <div class="social">
+    
+                        <a href="#" class="social__item"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="social__item instagran"><i class="fab fa-instagram-square"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script type="text/javascript" src="../public/js/menu.js"></script>
+    <script type="text/javascript" src="../public/js/menu.js" ></script>
 
     <script>
         // Get the modals
         var modal = document.getElementById("modal-metodo");
-
+        
         var modal_card = document.getElementById("modal-card");
 
         var modal_yape = document.getElementById("modal-yape");
@@ -225,58 +220,58 @@
         var btn = document.getElementById("button_orden");
 
         var card = document.getElementById("card");
-
+        
         var yape = document.getElementById("yape");
-
+        
         // Get the <span> and <img> element that closes or back to the modal
         var span = document.getElementsByClassName("close")[0];
 
         var back_card = document.getElementById("back_card");
 
         var back_yape = document.getElementById("back_yape");
-
+        
         // When the user clicks the button, open the modal 
-        btn.onclick = function () {
-            modal.style.display = "flex";
+        btn.onclick = function() {
+          modal.style.display = "flex";
         }
-
+        
         // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
+        span.onclick = function() {
+          modal.style.display = "none";
         }
-
+        
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if ((event.target == modal) || (event.target == modal_card) || (event.target == modal_yape)) {
-                modal.style.display = "none";
-                modal_card.style.display = "none";
-                modal_yape.style.display = "none";
-            }
+        window.onclick = function(event) {
+          if ((event.target == modal) || (event.target == modal_card) || (event.target == modal_yape)) {
+            modal.style.display = "none";
+            modal_card.style.display = "none";
+            modal_yape.style.display = "none";
+          }
         }
 
-        back_card.onclick = function () {
-            modal.style.display = "flex";
+        back_card.onclick = function() {
+            modal.style.display = "flex";  
             modal_card.style.display = "none";
         }
 
-        back_yape.onclick = function () {
-            modal.style.display = "flex";
+        back_yape.onclick = function() {
+            modal.style.display = "flex";  
             modal_yape.style.display = "none";
         }
 
-        card.onclick = function () {
-            modal.style.display = "none";
+        card.onclick = function() {
+            modal.style.display = "none";  
             modal_card.style.display = "flex";
         }
 
-        yape.onclick = function () {
+        yape.onclick = function() {
             modal.style.display = "none";
             modal_yape.style.display = "flex";
         }
-    </script>
+
+    </script>  
 
 
 
 </body>
-
 </html>

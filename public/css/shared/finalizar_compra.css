@@ -12,16 +12,6 @@ html {
     height: 100%;
 }
 
-.delivery{
-
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
-    padding-left: 0;
-    align-items: baseline;
-   
-}
-
 body {
     background-image: url("../../images/fondos/fondo_principal.jpg");
     display: grid;
@@ -35,12 +25,20 @@ body {
                         "footer footer";
 }
 
+/* ---------------------------------- */
 
+.delivery{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
 
 .cabecera-container{
     grid-area: header;
     width: 100%;
-    height: 100px;
+    height: 160px;
     background-color: transparent;
     padding: 0px 80px;
     font-family: 'Poppins', sans-serif;
@@ -49,64 +47,67 @@ body {
 /* ---------------------------------- */
 
 .title {
-
-    display: flex;
-    flex-direction: column;
     grid-area: title;
-   
+    display: flex;
     align-items: center;
     justify-content: space-between;
+   
+    margin-top: 5rem;
+    
+    flex-direction: column;
     width: 80%;
-    margin: 0 auto;
+    margin: 5rem auto;
     margin-top: 6rem;
 }
 
 .title h3 {
-
+    font-size:30px;
     color: white;
+    margin-bottom: 2rem;
 }
 
 .button_title {
     background-color:white;
-    align-self: flex-start;
+	
 	border:none;
 	cursor:pointer;
-	font-size:20px;
+	font-size:2rem;
 	font-weight:bold;
-	padding:1rem 3rem;
+	
     height: 5rem;
-    transition: background .3s;
+    align-self: flex-start;
+    
 }
 
 
 
-.button_title:hover{
-    
-    background-color: black;
- 
-    border: none;
-color: white;
+.button_title a {
+    display: block;
+    padding:1rem 3rem;
+    text-decoration: none;
+    color: black;
+    transition:background .3s;
 }
 
 .button_title a:hover{
+    background-color: black;
     color: white;
 }
 
 /* ---------------------------------- */
 
 .formulario {
-
     grid-area: formulario;
     color: white;
-    width: 90%;
+    width: 80%;
     margin-left: 20%;
-    margin-bottom: -1rem;
-
-    margin-top: 2rem;
+    margin-bottom: 8rem;
+    margin-top: 5rem;
+    
 }
 
 .form-datos {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -126,15 +127,8 @@ color: white;
     background-color: #333333;
     border: none;
 }
-.button_orden{
-    transition: background .3s;
-}
-.button_orden:hover{
-    background-color: black;
-    color: white;
-   
- 
-}
+
+
 /* ---------------------------------- */
 
 .orden {
@@ -151,12 +145,13 @@ color: white;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    width: 80%;
-    height: 77%;
+    width: 100%;
+    height: 70%;
     background-color: rgb(51, 51, 51, 0.8);
-    padding: 1rem;
-    margin-top: 6rem;
-    height: 75%;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    height: 80%;
 }
 
 .orden_box .header-order {
@@ -180,7 +175,9 @@ color: white;
 .subtotal span {
     font-weight: bold;
 }
-
+.check{
+    margin-right: 2rem;
+}
 .orden_box .envio {
     display: flex;
     justify-content: space-between;
@@ -193,31 +190,42 @@ color: white;
 .orden_box .total {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 0;
+    padding: 0;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .button_orden {
     background-color:white;
 	
-	
+	font-size: 20px;
 	cursor:pointer;
-    font-size: 15px;
+	font-size:1.6rem;
 	font-weight:bold;
-	padding:1rem 2rem;
+	border: none;
     text-decoration:none;
     height: 5rem;
-    
+    width: 50%;
     align-self: center;
+    transition: background .3s;
+    
 }
 
 .button_orden a {
     text-decoration: none;
     color: black;
+    padding:1rem 2rem;
+    display: block;
+   
+  
 }
 
+.button_orden:hover {
+    background-color: black;
+    color: white;
+}
 
- 
+/* ---------------------------------- */
 
 .footer {
     grid-area: footer;
@@ -242,6 +250,9 @@ color: white;
         font-size: 4.8rem;
     }
 }
+
+
+/*************************'''MODAL'''**************************/
 
 
 /* The Modal (background) */
@@ -328,6 +339,15 @@ color: white;
     margin: 1rem 0;
 }
 
+/* .modal-body {
+    padding: 1rem 1.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+} */
 
 .modal-body-card {
     grid-area: card;
@@ -373,6 +393,8 @@ color: white;
     font-weight: bold;
 }
 
+
+/*************************'''CARD'''**************************/
 
 
 /* The Modal (background) */
@@ -444,7 +466,15 @@ color: white;
     margin: 1rem 0;
 }
 
-
+/* .modal-body {
+    padding: 1rem 1.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+} */
 
 .modal-body-card_card {
     grid-area: card;
@@ -501,7 +531,7 @@ color: white;
 
 
 
-
+/*************************'''YAPE'''**************************/
 
 
 /* The Modal (background) */
@@ -588,6 +618,15 @@ color: white;
     margin: 1rem 0;
 }
 
+/* .modal-body {
+    padding: 1rem 1.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+} */
 
 .modal-body-card_yape {
     grid-area: card;
@@ -666,21 +705,15 @@ color: white;
         padding: 0 0px;
     }
 
-    .title {
-        width: 80%;
-        
-    }
+  
 
     .button_title{
-        font-size: 15px;
-        margin: 1rem 0;
+        font-size: 1.5rem;
     }
 
     .formulario {
         width: 90%;
-        margin: 2rem;
-        margin-top: 2rem;
-        margin-bottom: -1rem;
+        margin:  4rem auto;
     }
 
     .form-datos {
@@ -691,7 +724,7 @@ color: white;
 
     .orden {
         justify-content: center;
-        margin: 2rem auto;
+        margin: 0 auto;
     }
 
     .button_orden {
@@ -733,24 +766,23 @@ color: white;
        
     }
 
-   
+  
 
     .button_title {
         font-size: 1.5rem;
-        padding: 1rem 1rem;
+        
     }
 
     .orden_box{
         width: 100%;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .button_orden {
         margin-bottom: 2rem;
         padding: 1rem 1rem;
-       
+        font-size: 1.1rem;
     }
-
 
     .modal-content {
         width: 100%;
@@ -834,14 +866,7 @@ color: white;
     padding: 3rem;
 }
 
-.finalizar{
-    font-size: 30px;
-    margin-bottom: 2rem;
-}
 @media screen and (min-width:830px){
-   .button_orden{
-       font-size: 20px;
-   }
     .footer{
         font-size: 1.6rem;
         padding: 4rem;
@@ -857,12 +882,6 @@ color: white;
 
 @media screen and (min-width: 830px)
 {
-    .finalizar{
-        font-size: 42px
-    }
-    .orden_box{
-        padding: 2rem;
-    }
 .footerC_item {
 
 margin-bottom: .8rem;}}
@@ -878,28 +897,32 @@ margin-bottom: .8rem;}}
 
     .cabecera-container .cabecera {
           
-        height: 100%;
+        height: 60%;
         margin-left: .4rem;}
-        .formulario{
-            margin-top: 2rem;
-            margin-bottom: -1rem;
-        }
 
     @media screen and (min-width:770px){
-       .orden_box{
-           height: 45%;
-       }
-       
-        .formulario{
-            margin-top: 5rem;
-            margin-bottom: 10rem;
-        }
     .cabecera-container .cabecera {
       
-        height: 100%;
+        height: 60%;
         margin-left: 1rem;}
+    
+    .title h3{
+        font-size: 42px;
     }
+    
     .title{
-        margin-top:0;
+
+        margin: 0 auto;
+    
+    
     }
 
+.orden_box{
+    margin-top: 5rem;
+    height: 50%;
+    width: 80%;
+}
+.button_orden{
+    font-size: 20px;
+}
+}
