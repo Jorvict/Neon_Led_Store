@@ -3,7 +3,10 @@
     margin: .7rem 1rem;
     margin-top: 10rem;
 }
-
+input{color: white;}
+.area{
+    color: white;
+}
 .main__titulo {
     text-align: center;
     font-size: 30px;
