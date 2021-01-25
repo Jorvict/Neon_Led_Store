@@ -1,7 +1,9 @@
 body {
     background-image: url(../../images/fondos/fondo_principal.jpg);
 }
-
+input{
+    color: white;
+}
 .formI {
     background-color: rgba(58, 57, 57, 0.8);
     margin: 2rem;
