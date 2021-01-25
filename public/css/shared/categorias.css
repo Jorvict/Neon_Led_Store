@@ -75,10 +75,8 @@
 
     .main .shop .articles-section .article-card{
         width: 30%;
-        height: 200px;
+        height: 250px;
         margin-bottom: 25px;
-        border-radius: 15px;
-        overflow: hidden;
     }
     .main .shop .articles-section .article-card a{
         width: 100%;
@@ -86,7 +84,13 @@
     }
     .main .shop .articles-section .article-card a img{
         width: 100%;
-        height: 100%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    .main .shop .articles-section .article-card h3{
+        text-align: center;
+        font-size: 18px;
     }
 
 .footer{
