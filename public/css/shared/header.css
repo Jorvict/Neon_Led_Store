@@ -38,6 +38,16 @@ body{
     background-color: transparent;
     padding: 0px 90px;
     font-family: 'Poppins', sans-serif;
+
+
+
+    background-size: cover;
+    background-color: gray;
+    background-blend-mode: multiply;
+
+
+
+
 }
 
 .cabecera-container .cabecera{

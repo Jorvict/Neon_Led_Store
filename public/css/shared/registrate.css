@@ -1,5 +1,8 @@
 body {
     background-image: url(../../images/fondos/fondo_principal.jpg);
+    background-size: cover;
+    background-color: gray;
+    background-blend-mode: multiply;
 }
 input{
     color: white;
