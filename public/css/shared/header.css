@@ -118,6 +118,10 @@ body{
         padding: 0 0px;
         position: fixed;
         z-index: 500;
+
+        background-image: url('../../images/fondos/fondo_principal.jpg');
+        background-color: gray;
+        background-blend-mode: multiply;
     }
 
     .cabecera-container .cabecera .logo-container{
